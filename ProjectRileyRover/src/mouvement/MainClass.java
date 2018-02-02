@@ -19,6 +19,8 @@ public class MainClass {
 		Delay.msDelay(10000); // 10 secondes
 		Motor.A.stop();
 		Motor.B.stop();
+		
+		System.out.println("Done");
 	}
 
 }
