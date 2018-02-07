@@ -1,26 +1,85 @@
 package mouvement;
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+
+import lejos.hardware.Bluetooth;
+import lejos.hardware.Wifi;
 import lejos.hardware.motor.Motor;
-import lejos.utility.Delay;
+import lejos.hardware.motor.NXTRegulatedMotor;
+import lejos.remote.nxt.BTConnection;
+import lejos.remote.nxt.BTConnector;
+import lejos.remote.nxt.NXTConnection;
 
 public class MainClass {
+	
+	private static DataOutputStream out; 
+	private static DataInputStream in;
+	private static BTConnection BTConnect;
+	private static int commande=0;
+	private static int power = 50;
+	private static boolean stop_app;
+	
+	private static NXTRegulatedMotor moteurGauche;
+	private static NXTRegulatedMotor moteurDroit;
+	  
+	public static void main(String[] args)
+	{
+		  
+		connect(); // connection au bluetooth
+ 		stop_app = true;
+		moteurGauche = Motor.A;
+		moteurDroit = Motor.B;
+		moteurGauche.setSpeed(power);
+		moteurDroit.setSpeed(power);
+		moteurGauche.stop();
+		moteurDroit.stop();
+		while(stop_app)
+		{
+			try {
+				commande = (int) in.readByte();
+				System.out.println("Reçu " + commande);
+				switch(commande){
+					
+					// Avancer
+					case 1:
+						moteurGauche.forward();
+					   	moteurDroit.forward();
+				   		break;
+	   
+				    // Reculer
+				    case 2: 
+				    	moteurGauche.backward();
+				    	moteurDroit.backward();
+				    	break;
+					   
+  
+				   // Quittez
+				   case 7:
+					   stop_app = false;
+					   break;
+				}
 
-	public static void main(String[] args) {
-		// avancer
-		Motor.A.forward();
-		Motor.B.forward();
-		Delay.msDelay(10000); // 10 secondes
-		Motor.A.stop();
-		Motor.B.stop();
+			}
+    
+			catch (IOException ioe) {
+				System.out.println("IO Exception readInt");
+			}
+		}
 
-		// reculer
-		Motor.A.backward();
-		Motor.B.backward();
-		Delay.msDelay(10000); // 10 secondes
-		Motor.A.stop();
-		Motor.B.stop();
-		
-		System.out.println("Done");
+		moteurGauche.flt();
+		moteurDroit.flt();
 	}
+	  
+	public static void connect()
+	{  
+		System.out.println("En attente");
+		BTConnector BTconnector = (BTConnector) Bluetooth.getNXTCommConnector();
+		BTConnect = (BTConnection) BTconnector.waitForConnection(30000, NXTConnection.RAW);
+		out = BTConnect.openDataOutputStream();
+		in = BTConnect.openDataInputStream();
+	}
+
 
 }
