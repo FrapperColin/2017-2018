@@ -35,6 +35,7 @@ public class MainClass {
 		moteurDroit.setSpeed(power);
 		moteurGauche.stop();
 		moteurDroit.stop();
+		// while
 		while(stop_app)
 		{
 			try {
