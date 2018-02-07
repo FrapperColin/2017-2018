@@ -15,6 +15,17 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".ConnectionBluetoothActivity">
+
+        </activity>
+        <activity android:name=".ControlPageActivity">
+
+        </activity>
+        <activity android:name=".ConnectWifiActivity">
+
+        </activity>
     </application>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
 
 </manifest>

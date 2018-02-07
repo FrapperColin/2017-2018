@@ -57,14 +57,13 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        /* Diagnostics while developing */
         private void showToast(String msg) {
             Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
         }
 
         private void setup_activities() {
-            // addActivity("Connexion avec Bluetooth", Random.class);
-            // addActivity("Connexion avec Wifi", Random.class);
+            addActivity("Connexion avec Bluetooth", ConnectBluetoothActivity.class);
+            addActivity("Connexion avec Wifi", ConnectWifiActivity.class);
         }
 
         private void addActivity(String name, Class activity) {
