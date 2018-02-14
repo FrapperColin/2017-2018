@@ -55,17 +55,29 @@ public class MainClass {
 				    	moteurDroit.backward();
 				    	break;
 					   
+				    // Gauche
 				    case 3:
 				    	moteurGauche.backward();
 				    	moteurDroit.forward();
 				    	break ;
 				    
+				    // Droite
 				    case 4:
 				    	moteurDroit.backward();
 				    	moteurGauche.forward();
 				    	break ;
 				    
-				    	
+				    // Accélerer
+				    case 5:
+				    	power += 50 ;
+				    	moteurGauche.setSpeed(power);
+				    	moteurDroit.setSpeed(power);
+				    	break ;
+				    // Ralentir
+				    case 6:
+				    	power -= 50;
+				    	moteurGauche.setSpeed(power);
+				    	moteurDroit.setSpeed(power);
 				   // Quittez
 				   case 7:
 					   stop_app = false;
