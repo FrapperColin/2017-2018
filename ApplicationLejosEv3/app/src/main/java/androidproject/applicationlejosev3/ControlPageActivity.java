@@ -1,5 +1,6 @@
 package androidproject.applicationlejosev3;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -7,6 +8,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 /**
@@ -17,6 +21,7 @@ public class ControlPageActivity extends AppCompatActivity {
 
     ConnectBluetoothActivity BTConnect;
 
+    @SuppressLint("ClickableViewAccessibility")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_control_page);
@@ -67,6 +72,120 @@ public class ControlPageActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
-        // TODO AVANCER, RECULER A LIER AVEC LES BUTTONS
+
+        final Button buttonA = (Button) findViewById(R.id.buttonA);
+
+        buttonA.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()){
+                    case MotionEvent.ACTION_DOWN:
+                        try {
+                            BTConnect.writeMessage((byte) 1);
+                            return true;
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                            return false;
+                        }
+
+                    case MotionEvent.ACTION_UP:
+                        try {
+                            BTConnect.writeMessage((byte) 10);
+                            return true;
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                            return false;
+                        }
+                }
+                return false;
+            }
+        });
+
+        final Button buttonR = (Button) findViewById(R.id.buttonR);
+
+        buttonR.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()){
+                    case MotionEvent.ACTION_DOWN:
+                        try {
+                            BTConnect.writeMessage((byte) 2);
+                            return true;
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                            return false;
+                        }
+                        /*
+                    case MotionEvent.ACTION_UP:
+                        try {
+                            BTConnect.writeMessage((byte) 10);
+                            return true;
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                            return false;
+                        }*/
+                }
+                return false;
+            }
+        });
+        /*
+        Button buttonG = (Button) findViewById(R.id.buttonG);
+
+        buttonG.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction())
+                {
+                    case MotionEvent.ACTION_DOWN:
+                        try {
+                            BTConnect.writeMessage((byte) 3);
+                            return true;
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                            return false;
+                        }
+
+                    case MotionEvent.ACTION_UP:
+                        try {
+                            BTConnect.writeMessage((byte) 10);
+                            return true;
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                            return false;
+                        }
+                }
+                return false;
+
+            }
+        });
+
+        final Button buttonD = (Button) findViewById(R.id.buttonD);
+
+        buttonD.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()){
+                    case MotionEvent.ACTION_DOWN:
+                        try {
+                            BTConnect.writeMessage((byte) 4);
+                            return true;
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                            return false;
+                        }
+
+                    case MotionEvent.ACTION_UP:
+                        try {
+                            BTConnect.writeMessage((byte) 10);
+                            return true;
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                            return false;
+                        }
+                }
+                return false;
+            }
+        });
+        */
     }
 }
