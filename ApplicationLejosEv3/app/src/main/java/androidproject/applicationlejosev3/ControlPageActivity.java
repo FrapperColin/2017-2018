@@ -186,6 +186,70 @@ public class ControlPageActivity extends AppCompatActivity {
                 return false;
             }
         });
+        final Button buttonFast = (Button) findViewById(R.id.buttonAcc);
+
+        buttonFast.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()){
+                    case MotionEvent.ACTION_DOWN:
+                        try {
+                            BTConnect.writeMessage((byte) 5);
+                            return true;
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                            return false;
+                        }
+
+                }
+
+
+                return false;
+            }
+        });
+
+        final Button buttonSlow = (Button) findViewById(R.id.buttonRal);
+
+        buttonSlow.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()){
+                    case MotionEvent.ACTION_DOWN:
+                        try {
+                            BTConnect.writeMessage((byte) 6);
+                            return true;
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                            return false;
+                        }
+
+                }
+
+
+                return false;
+            }
+        });
+
+        final Button buttonExit = (Button) findViewById(R.id.buttonQuit);
+
+        buttonExit.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_DOWN:
+                        try {
+                            BTConnect.writeMessage((byte) 7);
+                            Intent intent = new Intent(ControlPageActivity.this, ConnectionBluetoothActivity.class);
+                            startActivity(intent);
+                            return true;
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                            return false;
+                        }
+                }
+                return false;
+            }
+        });
 
     }
 }
