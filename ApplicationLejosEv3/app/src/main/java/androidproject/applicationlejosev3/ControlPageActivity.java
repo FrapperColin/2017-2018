@@ -87,7 +87,7 @@ public class ControlPageActivity extends AppCompatActivity {
                             e.printStackTrace();
                             return false;
                         }
-
+                    /*
                     case MotionEvent.ACTION_UP:
                         try {
                             BTConnect.writeMessage((byte) 10);
@@ -95,7 +95,7 @@ public class ControlPageActivity extends AppCompatActivity {
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                             return false;
-                        }
+                        }*/
                 }
                 return false;
             }
@@ -128,7 +128,7 @@ public class ControlPageActivity extends AppCompatActivity {
                 return false;
             }
         });
-        /*
+
         Button buttonG = (Button) findViewById(R.id.buttonG);
 
         buttonG.setOnTouchListener(new View.OnTouchListener() {
@@ -144,7 +144,7 @@ public class ControlPageActivity extends AppCompatActivity {
                             e.printStackTrace();
                             return false;
                         }
-
+                    /*
                     case MotionEvent.ACTION_UP:
                         try {
                             BTConnect.writeMessage((byte) 10);
@@ -152,7 +152,7 @@ public class ControlPageActivity extends AppCompatActivity {
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                             return false;
-                        }
+                        }*/
                 }
                 return false;
 
@@ -173,7 +173,7 @@ public class ControlPageActivity extends AppCompatActivity {
                             e.printStackTrace();
                             return false;
                         }
-
+                    /*
                     case MotionEvent.ACTION_UP:
                         try {
                             BTConnect.writeMessage((byte) 10);
@@ -181,11 +181,11 @@ public class ControlPageActivity extends AppCompatActivity {
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                             return false;
-                        }
+                        }*/
                 }
                 return false;
             }
         });
-        */
+
     }
 }
