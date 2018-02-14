@@ -55,7 +55,17 @@ public class MainClass {
 				    	moteurDroit.backward();
 				    	break;
 					   
-  
+				    case 3:
+				    	moteurGauche.backward();
+				    	moteurDroit.forward();
+				    	break ;
+				    
+				    case 4:
+				    	moteurDroit.backward();
+				    	moteurGauche.forward();
+				    	break ;
+				    
+				    	
 				   // Quittez
 				   case 7:
 					   stop_app = false;
