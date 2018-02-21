@@ -18,6 +18,9 @@
         <activity android:name=".ConnectionBluetoothActivity">
 
         </activity>
+        <activity android:name=".ConnectBluetoothActivity">
+
+        </activity>
         <activity android:name=".ControlPageActivity">
 
         </activity>
