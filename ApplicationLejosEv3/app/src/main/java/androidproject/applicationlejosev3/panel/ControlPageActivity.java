@@ -1,35 +1,48 @@
-package androidproject.applicationlejosev3;
+package androidproject.applicationlejosev3.panel;
 
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.FragmentActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import de.nitri.gauge.Gauge;
+import androidproject.applicationlejosev3.R;
+import androidproject.applicationlejosev3.connection.ConnectBluetoothActivity;
+import androidproject.applicationlejosev3.connection.ConnectionBluetoothActivity;
 
 /**
  * Created by moi on 07/02/2018.
  */
 
-public class ControlPageActivity extends AppCompatActivity {
+public class ControlPageActivity extends FragmentActivity {
 
     ConnectBluetoothActivity BTConnect;
-    Gauge gauge ;
     int currentSpeed = 0 ;
-
+    Speedometer speed ;
+    Wheel wheel ;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_control_page);
 
-        gauge = (Gauge) findViewById(R.id.gauge);
+        speed = (Speedometer) getSupportFragmentManager().findFragmentById(R.id.speedometer);
+        wheel = (Wheel) getSupportFragmentManager().findFragmentById(R.id.wheel);
+
+
+        //getFragmentManager().beginTransaction().replace(R.id.fragment2, speed).commit();
+       /*getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment2, new FragmentScreenB()).commit();
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment3, new FragmentScreenC()).commit();
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment4, new FragmentScreenD()).commit();*/
+
+
 
         BTConnect = new ConnectBluetoothActivity();
 
@@ -78,9 +91,7 @@ public class ControlPageActivity extends AppCompatActivity {
         }
 
 
-        final Button buttonA = (Button) findViewById(R.id.buttonA);
-
-        buttonA.setOnTouchListener(new View.OnTouchListener() {
+        wheel.getButtonAvancer().setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
@@ -88,7 +99,8 @@ public class ControlPageActivity extends AppCompatActivity {
                         if(currentSpeed == 0)
                         {
                             currentSpeed = 50;
-                            gauge.setValue(currentSpeed);
+                            speed.changeValue(currentSpeed);
+                            //gauge.setValue(currentSpeed);
                         }
                         try {
                             BTConnect.writeMessage((byte) 1);
@@ -111,9 +123,8 @@ public class ControlPageActivity extends AppCompatActivity {
             }
         });
 
-        final Button buttonR = (Button) findViewById(R.id.buttonR);
 
-        buttonR.setOnTouchListener(new View.OnTouchListener() {
+        wheel.getButtonReculer().setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
@@ -139,9 +150,8 @@ public class ControlPageActivity extends AppCompatActivity {
             }
         });
 
-        Button buttonG = (Button) findViewById(R.id.buttonG);
 
-        buttonG.setOnTouchListener(new View.OnTouchListener() {
+        wheel.getButtonGauche().setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction())
@@ -169,9 +179,8 @@ public class ControlPageActivity extends AppCompatActivity {
             }
         });
 
-        final Button buttonD = (Button) findViewById(R.id.buttonD);
 
-        buttonD.setOnTouchListener(new View.OnTouchListener() {
+        wheel.getButtonDroite().setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
@@ -196,15 +205,16 @@ public class ControlPageActivity extends AppCompatActivity {
                 return false;
             }
         });
-        final Button buttonFast = (Button) findViewById(R.id.buttonAcc);
 
-        buttonFast.setOnTouchListener(new View.OnTouchListener() {
+        wheel.getButtonAccelerer().setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
                     case MotionEvent.ACTION_DOWN:
                         currentSpeed += 50 ;
-                        gauge.setValue(currentSpeed);
+                        speed.changeValue(currentSpeed);
+
+                        //gauge.setValue(currentSpeed);
                         try {
                             BTConnect.writeMessage((byte) 5);
                             return true;
@@ -220,15 +230,16 @@ public class ControlPageActivity extends AppCompatActivity {
             }
         });
 
-        final Button buttonSlow = (Button) findViewById(R.id.buttonRal);
 
-        buttonSlow.setOnTouchListener(new View.OnTouchListener() {
+        wheel.getButtonRalentir().setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
                     case MotionEvent.ACTION_DOWN:
                         currentSpeed -= 50 ;
-                        gauge.setValue(currentSpeed);
+                        speed.changeValue(currentSpeed);
+
+                        //gauge.setValue(currentSpeed);
                         try {
 
                             BTConnect.writeMessage((byte) 6);
@@ -245,9 +256,8 @@ public class ControlPageActivity extends AppCompatActivity {
             }
         });
 
-        final Button buttonExit = (Button) findViewById(R.id.buttonQuit);
 
-        buttonExit.setOnTouchListener(new View.OnTouchListener() {
+        wheel.getButtonQuitter().setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()) {

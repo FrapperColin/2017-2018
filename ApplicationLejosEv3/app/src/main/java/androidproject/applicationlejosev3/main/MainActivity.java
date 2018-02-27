@@ -1,4 +1,4 @@
-package androidproject.applicationlejosev3;
+package androidproject.applicationlejosev3.main;
 
 /**
  * MainList.java
@@ -7,8 +7,6 @@ package androidproject.applicationlejosev3;
  */
 import android.app.ListActivity;
 import android.content.Intent;
-import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -20,6 +18,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import androidproject.applicationlejosev3.connection.ConnectWifiActivity;
+import androidproject.applicationlejosev3.R;
+import androidproject.applicationlejosev3.connection.ConnectionBluetoothActivity;
 
 
 public class MainActivity extends ListActivity {

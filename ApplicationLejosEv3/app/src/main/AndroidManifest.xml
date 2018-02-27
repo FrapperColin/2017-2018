@@ -2,33 +2,39 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="androidproject.applicationlejosev3">
 
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ConnectionBluetoothActivity">
-
+        <activity android:name=".connection.ConnectionBluetoothActivity">
         </activity>
-        <activity android:name=".ConnectBluetoothActivity">
-
+        <activity android:name=".connection.ConnectBluetoothActivity">
         </activity>
-        <activity android:name=".ControlPageActivity">
-
+        <activity android:name=".panel.ControlPageActivity">
         </activity>
-        <activity android:name=".ConnectWifiActivity">
-
+        <activity android:name=".connection.ConnectWifiActivity">
+        </activity>
+        <activity
+            android:name=".panel.Speedometer"
+            android:label="@string/title_activity_speedometer"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".panel.Wheel"
+            android:label="@string/title_activity_wheel"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
-    <uses-permission android:name="android.permission.BLUETOOTH" />
-
 
 </manifest>

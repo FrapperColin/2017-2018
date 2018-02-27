@@ -1,4 +1,4 @@
-package androidproject.applicationlejosev3;
+package androidproject.applicationlejosev3.connection;
 /**
  * Created by moi on 07/02/2018.
  */
@@ -13,6 +13,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import androidproject.applicationlejosev3.panel.ControlPageActivity;
+import androidproject.applicationlejosev3.R;
 
 
 public class ConnectionBluetoothActivity extends AppCompatActivity {

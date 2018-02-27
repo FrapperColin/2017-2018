@@ -1,4 +1,4 @@
-package androidproject.applicationlejosev3;
+package androidproject.applicationlejosev3.connection;
 
 
 import android.support.v7.app.AppCompatActivity;

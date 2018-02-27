@@ -16,16 +16,11 @@
     <string name="cancel">Cancel</string>
     <string name="bt_failed">Impossible de se connecter à cette adresse</string>
     <string name="bt_disabled">Autorisez le bluetooth pour continuer</string>
+    <string name="title_activity_speedometer">Speedometer</string>
 
-
-
-
-
-
-
-
-
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_wheel">Wheel</string>
 
 
 </resources>
