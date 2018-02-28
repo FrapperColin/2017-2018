@@ -15,9 +15,12 @@ public class Speedometer extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        View v = inflater.inflate(R.layout.activity_speedometer,container,false);
-        gauge = v.findViewById(R.id.gauge);
-        return v ;
+        return inflater.inflate(R.layout.activity_speedometer,container,false);
+    }
+
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        gauge = view.findViewById(R.id.gauge);
+
     }
 
     public void changeValue(int value)

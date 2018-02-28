@@ -25,16 +25,6 @@
         </activity>
         <activity android:name=".connection.ConnectWifiActivity">
         </activity>
-        <activity
-            android:name=".panel.Speedometer"
-            android:label="@string/title_activity_speedometer"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity
-            android:name=".panel.Wheel"
-            android:label="@string/title_activity_wheel"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
     </application>
 
 </manifest>

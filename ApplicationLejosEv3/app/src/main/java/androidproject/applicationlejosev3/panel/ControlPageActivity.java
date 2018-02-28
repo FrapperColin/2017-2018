@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -15,35 +17,37 @@ import android.widget.Toast;
 import androidproject.applicationlejosev3.R;
 import androidproject.applicationlejosev3.connection.ConnectBluetoothActivity;
 import androidproject.applicationlejosev3.connection.ConnectionBluetoothActivity;
+import de.nitri.gauge.Gauge;
 
 /**
  * Created by moi on 07/02/2018.
  */
 
-public class ControlPageActivity extends FragmentActivity {
+public class ControlPageActivity extends AppCompatActivity {
 
     ConnectBluetoothActivity BTConnect;
     int currentSpeed = 0 ;
-    Speedometer speed ;
-    Wheel wheel ;
+    Button buttonA ;
+    Button buttonR ;
+    Button buttonG ;
+    Button buttonD ;
+    Button buttonFast;
+    Button buttonSlow ;
+    Button buttonExit ;
+    Gauge gauge ;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_control_page);
 
-        speed = (Speedometer) getSupportFragmentManager().findFragmentById(R.id.speedometer);
-        wheel = (Wheel) getSupportFragmentManager().findFragmentById(R.id.wheel);
-
-
-        //getFragmentManager().beginTransaction().replace(R.id.fragment2, speed).commit();
-       /*getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment2, new FragmentScreenB()).commit();
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment3, new FragmentScreenC()).commit();
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment4, new FragmentScreenD()).commit();*/
-
-
-
+        buttonA = (Button) findViewById(R.id.buttonA);
+        buttonR = (Button) findViewById(R.id.buttonR);
+        buttonG = (Button) findViewById(R.id.buttonG);
+        buttonD = (Button) findViewById(R.id.buttonD);
+        buttonFast = (Button) findViewById(R.id.buttonAcc);
+        buttonSlow = (Button) findViewById(R.id.buttonRal);
+        buttonExit = (Button) findViewById(R.id.buttonQuit);
+        gauge = findViewById(R.id.gauge);
         BTConnect = new ConnectBluetoothActivity();
 
         // Avertir l'utilisateur d'autoriser la connection bluetooth
@@ -91,15 +95,15 @@ public class ControlPageActivity extends FragmentActivity {
         }
 
 
-        wheel.getButtonAvancer().setOnTouchListener(new View.OnTouchListener() {
+        buttonA.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
                     case MotionEvent.ACTION_DOWN:
                         if(currentSpeed == 0)
                         {
-                            currentSpeed = 50;
-                            speed.changeValue(currentSpeed);
+                            currentSpeed = 10;
+                            gauge.setValue(currentSpeed);
                             //gauge.setValue(currentSpeed);
                         }
                         try {
@@ -124,7 +128,7 @@ public class ControlPageActivity extends FragmentActivity {
         });
 
 
-        wheel.getButtonReculer().setOnTouchListener(new View.OnTouchListener() {
+        buttonR.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
@@ -151,7 +155,7 @@ public class ControlPageActivity extends FragmentActivity {
         });
 
 
-        wheel.getButtonGauche().setOnTouchListener(new View.OnTouchListener() {
+        buttonG.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction())
@@ -180,7 +184,7 @@ public class ControlPageActivity extends FragmentActivity {
         });
 
 
-        wheel.getButtonDroite().setOnTouchListener(new View.OnTouchListener() {
+        buttonD.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
@@ -206,13 +210,13 @@ public class ControlPageActivity extends FragmentActivity {
             }
         });
 
-        wheel.getButtonAccelerer().setOnTouchListener(new View.OnTouchListener() {
+        buttonFast.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
                     case MotionEvent.ACTION_DOWN:
-                        currentSpeed += 50 ;
-                        speed.changeValue(currentSpeed);
+                        currentSpeed += 10 ;
+                        gauge.setValue(currentSpeed);
 
                         //gauge.setValue(currentSpeed);
                         try {
@@ -231,15 +235,14 @@ public class ControlPageActivity extends FragmentActivity {
         });
 
 
-        wheel.getButtonRalentir().setOnTouchListener(new View.OnTouchListener() {
+        buttonSlow.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
                     case MotionEvent.ACTION_DOWN:
-                        currentSpeed -= 50 ;
-                        speed.changeValue(currentSpeed);
+                        currentSpeed -= 10   ;
+                        gauge.setValue(currentSpeed);
 
-                        //gauge.setValue(currentSpeed);
                         try {
 
                             BTConnect.writeMessage((byte) 6);
@@ -257,7 +260,7 @@ public class ControlPageActivity extends FragmentActivity {
         });
 
 
-        wheel.getButtonQuitter().setOnTouchListener(new View.OnTouchListener() {
+        buttonExit.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()) {
