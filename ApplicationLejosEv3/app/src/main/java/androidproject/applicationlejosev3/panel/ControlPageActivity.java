@@ -6,19 +6,21 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentTransaction;
+
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatSeekBar;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.SeekBar;
 import android.widget.Toast;
+
+import com.github.capur16.digitspeedviewlib.DigitSpeedView;
 
 import androidproject.applicationlejosev3.R;
 import androidproject.applicationlejosev3.connection.ConnectBluetoothActivity;
 import androidproject.applicationlejosev3.connection.ConnectionBluetoothActivity;
 import de.nitri.gauge.Gauge;
-
 /**
  * Created by moi on 07/02/2018.
  */
@@ -35,6 +37,8 @@ public class ControlPageActivity extends AppCompatActivity {
     Button buttonSlow ;
     Button buttonExit ;
     Gauge gauge ;
+    DigitSpeedView digit ;
+    AppCompatSeekBar seekBar ;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +53,8 @@ public class ControlPageActivity extends AppCompatActivity {
         buttonExit = (Button) findViewById(R.id.buttonQuit);
         gauge = findViewById(R.id.gauge);
         BTConnect = new ConnectBluetoothActivity();
+        seekBar = findViewById(R.id.seek);
+        digit = findViewById(R.id.digitView);
 
         // Avertir l'utilisateur d'autoriser la connection bluetooth
         AlertDialog.Builder builder = new AlertDialog.Builder(ControlPageActivity.this);
@@ -95,6 +101,47 @@ public class ControlPageActivity extends AppCompatActivity {
         }
 
 
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                if(i> currentSpeed -10)
+                {
+                    currentSpeed += 10 ;
+                    gauge.setValue(currentSpeed);
+                    digit.updateSpeed(currentSpeed);
+                    try {
+                        BTConnect.writeMessage((byte) 5);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                else if (i< currentSpeed-10)
+                {
+                    currentSpeed -= 10 ;
+                    gauge.setValue(currentSpeed);
+                    digit.updateSpeed(currentSpeed);
+                    try {
+                        BTConnect.writeMessage((byte) 6);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
         buttonA.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -103,6 +150,7 @@ public class ControlPageActivity extends AppCompatActivity {
                         if(currentSpeed == 0)
                         {
                             currentSpeed = 10;
+                            digit.updateSpeed(currentSpeed);
                             gauge.setValue(currentSpeed);
                             //gauge.setValue(currentSpeed);
                         }

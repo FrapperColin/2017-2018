@@ -30,4 +30,6 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.github.Pygmalion69:Gauge:1.2.3'
     testImplementation 'junit:junit:4.12'
+    compile 'com.github.capur16:DigitSpeedView:v1.0.3'
+
 }
