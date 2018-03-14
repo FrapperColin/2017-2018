@@ -110,14 +110,13 @@ public class ControlPageActivity extends AppCompatActivity {
                     gauge.setValue(currentSpeed);
                     digit.updateSpeed(currentSpeed);
                     try {
-                        BTConnect.writeMessage((byte) 5);
+                        BTConnect.writeMessage((byte) 1);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                 }
-                else if (i< currentSpeed-10)
-                {
-                    currentSpeed -= 10 ;
+                else if (i< currentSpeed-10) {
+                    currentSpeed -= 10;
                     gauge.setValue(currentSpeed);
                     digit.updateSpeed(currentSpeed);
                     try {
@@ -126,9 +125,6 @@ public class ControlPageActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-
-
-
             }
 
             @Override
@@ -152,7 +148,6 @@ public class ControlPageActivity extends AppCompatActivity {
                             currentSpeed = 10;
                             digit.updateSpeed(currentSpeed);
                             gauge.setValue(currentSpeed);
-                            //gauge.setValue(currentSpeed);
                         }
                         try {
                             BTConnect.writeMessage((byte) 1);
@@ -182,7 +177,7 @@ public class ControlPageActivity extends AppCompatActivity {
                 switch (event.getAction()){
                     case MotionEvent.ACTION_DOWN:
                         try {
-                            BTConnect.writeMessage((byte) 2);
+                            BTConnect.writeMessage((byte)4);
                             return true;
                         } catch (InterruptedException e) {
                             e.printStackTrace();
@@ -265,10 +260,12 @@ public class ControlPageActivity extends AppCompatActivity {
                     case MotionEvent.ACTION_DOWN:
                         currentSpeed += 10 ;
                         gauge.setValue(currentSpeed);
+                        digit.updateSpeed(currentSpeed);
+
 
                         //gauge.setValue(currentSpeed);
                         try {
-                            BTConnect.writeMessage((byte) 5);
+                            BTConnect.writeMessage((byte) 1);
                             return true;
                         } catch (InterruptedException e) {
                             e.printStackTrace();
@@ -290,6 +287,7 @@ public class ControlPageActivity extends AppCompatActivity {
                     case MotionEvent.ACTION_DOWN:
                         currentSpeed -= 10   ;
                         gauge.setValue(currentSpeed);
+                        digit.updateSpeed(currentSpeed);
 
                         try {
 
