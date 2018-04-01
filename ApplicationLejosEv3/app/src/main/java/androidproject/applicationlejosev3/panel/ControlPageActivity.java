@@ -12,6 +12,7 @@ import android.support.v7.widget.AppCompatSeekBar;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.Toast;
 
@@ -31,11 +32,10 @@ public class ControlPageActivity extends AppCompatActivity {
     int currentSpeed = 0 ;
     Button buttonA ;
     Button buttonR ;
-    Button buttonG ;
-    Button buttonD ;
-    Button buttonFast;
-    Button buttonSlow ;
+    ImageButton buttonG ;
+    ImageButton buttonD ;
     Button buttonExit ;
+    Button buttonStop;
     Gauge gauge ;
     DigitSpeedView digit ;
     AppCompatSeekBar seekBar ;
@@ -46,14 +46,15 @@ public class ControlPageActivity extends AppCompatActivity {
 
         buttonA = (Button) findViewById(R.id.buttonA);
         buttonR = (Button) findViewById(R.id.buttonR);
-        buttonG = (Button) findViewById(R.id.buttonG);
-        buttonD = (Button) findViewById(R.id.buttonD);
-        buttonFast = (Button) findViewById(R.id.buttonAcc);
-        buttonSlow = (Button) findViewById(R.id.buttonRal);
+        buttonG = (ImageButton) findViewById(R.id.buttonG);
+        buttonD = (ImageButton) findViewById(R.id.buttonD);
         buttonExit = (Button) findViewById(R.id.buttonQuit);
+        buttonStop = (Button) findViewById(R.id.buttonS);
+
         gauge = findViewById(R.id.gauge);
         BTConnect = new ConnectBluetoothActivity();
         seekBar = findViewById(R.id.seek);
+        seekBar.incrementProgressBy(10);
         digit = findViewById(R.id.digitView);
 
         // Avertir l'utilisateur d'autoriser la connection bluetooth
@@ -100,41 +101,45 @@ public class ControlPageActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
-
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                if(i> currentSpeed -10)
-                {
-                    currentSpeed += 10 ;
-                    gauge.setValue(currentSpeed);
-                    digit.updateSpeed(currentSpeed);
+                if(i==0) {
                     try {
-                        BTConnect.writeMessage((byte) 1);
+                        BTConnect.writeMessage((byte) 7);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                }
-                else if (i< currentSpeed-10) {
-                    currentSpeed -= 10;
+                    currentSpeed = 0;
                     gauge.setValue(currentSpeed);
                     digit.updateSpeed(currentSpeed);
+                } else if(i> currentSpeed) {
+                    try {
+                        BTConnect.writeMessage((byte) 5);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    currentSpeed += 10 ;
+                    gauge.setValue(currentSpeed);
+                    digit.updateSpeed(currentSpeed);
+                } else if (i< currentSpeed) {
                     try {
                         BTConnect.writeMessage((byte) 6);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
+                    currentSpeed -= 10;
+                    gauge.setValue(currentSpeed);
+                    digit.updateSpeed(currentSpeed);
                 }
+                seekBar.setProgress(currentSpeed);
             }
-
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-
             }
         });
 
@@ -143,11 +148,11 @@ public class ControlPageActivity extends AppCompatActivity {
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
                     case MotionEvent.ACTION_DOWN:
-                        if(currentSpeed == 0)
-                        {
+                        if(currentSpeed == 0) {
                             currentSpeed = 10;
                             digit.updateSpeed(currentSpeed);
                             gauge.setValue(currentSpeed);
+                            seekBar.setProgress(currentSpeed);
                         }
                         try {
                             BTConnect.writeMessage((byte) 1);
@@ -156,20 +161,10 @@ public class ControlPageActivity extends AppCompatActivity {
                             e.printStackTrace();
                             return false;
                         }
-                    /*
-                    case MotionEvent.ACTION_UP:
-                        try {
-                            BTConnect.writeMessage((byte) 10);
-                            return true;
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                            return false;
-                        }*/
                 }
                 return false;
             }
         });
-
 
         buttonR.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -177,26 +172,22 @@ public class ControlPageActivity extends AppCompatActivity {
                 switch (event.getAction()){
                     case MotionEvent.ACTION_DOWN:
                         try {
-                            BTConnect.writeMessage((byte)4);
+                            BTConnect.writeMessage((byte)2);
+                            if(currentSpeed == 0) {
+                                currentSpeed = 10;
+                                digit.updateSpeed(currentSpeed);
+                                gauge.setValue(currentSpeed);
+                                seekBar.setProgress(currentSpeed);
+                            }
                             return true;
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                             return false;
                         }
-                        /*
-                    case MotionEvent.ACTION_UP:
-                        try {
-                            BTConnect.writeMessage((byte) 10);
-                            return true;
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                            return false;
-                        }*/
                 }
                 return false;
             }
         });
-
 
         buttonG.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -211,21 +202,11 @@ public class ControlPageActivity extends AppCompatActivity {
                             e.printStackTrace();
                             return false;
                         }
-                    /*
-                    case MotionEvent.ACTION_UP:
-                        try {
-                            BTConnect.writeMessage((byte) 10);
-                            return true;
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                            return false;
-                        }*/
                 }
                 return false;
 
             }
         });
-
 
         buttonD.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -239,72 +220,31 @@ public class ControlPageActivity extends AppCompatActivity {
                             e.printStackTrace();
                             return false;
                         }
-                    /*
-                    case MotionEvent.ACTION_UP:
-                        try {
-                            BTConnect.writeMessage((byte) 10);
-                            return true;
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                            return false;
-                        }*/
                 }
                 return false;
             }
         });
 
-        buttonFast.setOnTouchListener(new View.OnTouchListener() {
+        buttonStop.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getAction()){
+                switch (event.getAction()) {
                     case MotionEvent.ACTION_DOWN:
-                        currentSpeed += 10 ;
-                        gauge.setValue(currentSpeed);
-                        digit.updateSpeed(currentSpeed);
-
-
-                        //gauge.setValue(currentSpeed);
                         try {
-                            BTConnect.writeMessage((byte) 1);
+                            BTConnect.writeMessage((byte) 7);
+                            currentSpeed = 10;
+                            digit.updateSpeed(currentSpeed);
+                            gauge.setValue(currentSpeed);
+                            seekBar.setProgress(currentSpeed);
                             return true;
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                             return false;
                         }
-
                 }
-
-
                 return false;
             }
         });
-
-
-        buttonSlow.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getAction()){
-                    case MotionEvent.ACTION_DOWN:
-                        currentSpeed -= 10   ;
-                        gauge.setValue(currentSpeed);
-                        digit.updateSpeed(currentSpeed);
-
-                        try {
-
-                            BTConnect.writeMessage((byte) 6);
-                            return true;
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                            return false;
-                        }
-
-                }
-
-
-                return false;
-            }
-        });
-
 
         buttonExit.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -312,7 +252,7 @@ public class ControlPageActivity extends AppCompatActivity {
                 switch (event.getAction()) {
                     case MotionEvent.ACTION_DOWN:
                         try {
-                            BTConnect.writeMessage((byte) 7);
+                            BTConnect.writeMessage((byte) 10);
                             Intent intent = new Intent(ControlPageActivity.this, ConnectionBluetoothActivity.class);
                             startActivity(intent);
                             return true;

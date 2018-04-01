@@ -41,7 +41,7 @@
                 android:layout_below="@id/digitView"
                 android:id="@+id/seek"
                 android:max="100"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="60dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
@@ -89,66 +89,33 @@
                         android:layout_weight="1">
 
             <Button
+                android:id="@+id/buttonA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/avancer"
-                android:id="@+id/buttonA"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="176dp" />
-
+                android:layout_centerHorizontal="true"/>
             <Button
+                android:id="@+id/buttonR"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/reculer"
-                android:id="@+id/buttonR"
-                android:layout_below="@+id/buttonD"
-                android:layout_centerHorizontal="true" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/gauche"
-                android:id="@+id/buttonG"
                 android:layout_below="@+id/buttonA"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
+                android:layout_centerHorizontal="true"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/droite"
-                android:id="@+id/buttonD"
-                android:layout_below="@+id/buttonA"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/accelerer"
-                android:id="@+id/buttonAcc"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ralentir"
-                android:id="@+id/buttonRal"
-                android:layout_alignParentTop="true"
-                android:layout_alignRight="@+id/buttonR"
-                android:layout_alignEnd="@+id/buttonR" />
-
+                android:text="@string/stop"
+                android:id="@+id/buttonS"
+                android:layout_below="@+id/buttonR"
+                android:layout_centerHorizontal="true"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/exit"
                 android:id="@+id/buttonQuit"
-                android:layout_alignParentBottom="true"
-                android:layout_alignRight="@+id/buttonR"
-                android:layout_alignEnd="@+id/buttonR" />
+                android:layout_below="@+id/buttonS"
+                android:layout_centerHorizontal="true"/>
+
 
         </RelativeLayout>
 
@@ -160,13 +127,24 @@
                         android:paddingRight="16dp"
                         android:paddingTop="16dp"
                         android:layout_weight="1">
-        <Button
-            android:id="@+id/compass"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-          />
+
+            <ImageButton
+                android:id="@+id/buttonG"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/left_arrow"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"/>
+
+            <ImageButton
+                android:id="@+id/buttonD"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/right_arrow"
+                android:scaleType="fitCenter"
+                android:layout_toRightOf="@+id/buttonG"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"/>
         </RelativeLayout>
 
     </LinearLayout>
