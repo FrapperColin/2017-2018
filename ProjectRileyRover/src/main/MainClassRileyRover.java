@@ -5,16 +5,9 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 
 import lejos.hardware.Bluetooth;
-import lejos.hardware.BrickFinder;
-import lejos.hardware.Wifi;
-import lejos.hardware.motor.EV3LargeRegulatedMotor;
-import lejos.hardware.motor.Motor;
-import lejos.hardware.motor.NXTRegulatedMotor;
 import lejos.remote.nxt.BTConnection;
 import lejos.remote.nxt.BTConnector;
 import lejos.remote.nxt.NXTConnection;
-import lejos.robotics.RegulatedMotor;
-import lejos.hardware.sensor.HiTechnicCompass;
 
 public class MainClassRileyRover {
 	
@@ -53,6 +46,10 @@ public class MainClassRileyRover {
     					break ;
     				case 6 : 
     					ctrl.decelerated(50);
+    					break ;
+    				case 7 :
+    					ctrl.stop();
+    					break;
     				default :
     					stop_app = false;
     					ctrl.ultrasonicSensor.arret();

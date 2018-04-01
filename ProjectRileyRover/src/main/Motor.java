@@ -30,13 +30,13 @@ public class Motor {
 	}
 
 	public void movingBackward() {
-		motor.backward();
 		setSpeed(50);
+		motor.backward();
 	}
 	
 	public void movingForward() {
-		motor.forward();
 		setSpeed(50);
+		motor.forward();
 	}
 	
 	public RegulatedMotor getMotor() {
@@ -53,7 +53,6 @@ public class Motor {
 	}
 
 	public void rotateHalf() {
-		motor.rotate(-180);
-		
+		motor.rotate(90);
 	}
 }

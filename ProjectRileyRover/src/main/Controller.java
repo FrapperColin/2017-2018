@@ -1,6 +1,5 @@
 package main;
 
-import lejos.hardware.BrickFinder;
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
 import lejos.hardware.port.MotorPort;
 import lejos.hardware.port.SensorPort;
@@ -49,6 +48,8 @@ public class Controller {
 
 	public void movingForward () {
 		if(actualState instanceof StateCarStopped) {
+			System.out.println("want to go forward after stop");
+
 	    	leftMotor.getMotor().startSynchronization();
 	    	leftMotor.movingForward();
 	        rightMotor.movingForward();
@@ -63,6 +64,8 @@ public class Controller {
 	
 	public void movingBackward() {
 		if(actualState instanceof StateCarStopped) {
+			System.out.println("want to go backward after stop");
+			System.out.println(leftMotor.getMotor().getSpeed());
 	    	leftMotor.getMotor().startSynchronization();
 	    	leftMotor.movingBackward();
 	    	rightMotor.movingBackward();
@@ -153,29 +156,31 @@ public class Controller {
 			rightMotor.setPreviousSpeed(rightMotor.getSpeed());
 			actualState = stateSlowingDown ;
 			leftMotor.getMotor().startSynchronization();
-	    	leftMotor.setSpeed(20);
-	        rightMotor.setSpeed(20);
+	    	leftMotor.setSpeed(30);
+	        rightMotor.setSpeed(30);
 	        leftMotor.getMotor().endSynchronization();
 		}
 	}
 
-	public void contact() {
+	public void contact() throws InterruptedException {
 		if(actualState instanceof StateCarSlowingDown) {
 			actualState = stateBackUp ;
 			leftMotor.getMotor().startSynchronization();
 			leftMotor.stop();
 			rightMotor.stop();
-	    	leftMotor.rotateHalf();
-	        rightMotor.rotateHalf();
 	        leftMotor.getMotor().endSynchronization();
-	        while(ultrasonicSensor.isUltrasonicDetected()) {}
+	        while(ultrasonicSensor.isUltrasonicDetected()) {
+				leftMotor.getMotor().startSynchronization();
+		        leftMotor.movingForward();
+		        rightMotor.movingBackward();
+		        leftMotor.getMotor().endSynchronization();
+	        }
+	        Thread.sleep(2000);
 			leftMotor.getMotor().startSynchronization();
-			leftMotor.movingForward();
-			leftMotor.setSpeed(leftMotor.getPreviousSpeed());
-			rightMotor.movingForward();
-			rightMotor.setSpeed(rightMotor.getPreviousSpeed());
+	        leftMotor.stop();
+	        rightMotor.stop();
 	        leftMotor.getMotor().endSynchronization();
-	        actualState = stateMovingForward;
+	        actualState = stateStopped;
 		}
 	}
 }
