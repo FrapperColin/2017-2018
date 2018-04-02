@@ -232,7 +232,7 @@ public class ControlPageActivity extends AppCompatActivity {
                     case MotionEvent.ACTION_DOWN:
                         try {
                             BTConnect.writeMessage((byte) 7);
-                            currentSpeed = 10;
+                            currentSpeed = 0;
                             digit.updateSpeed(currentSpeed);
                             gauge.setValue(currentSpeed);
                             seekBar.setProgress(currentSpeed);

@@ -130,16 +130,16 @@
 
             <ImageButton
                 android:id="@+id/buttonG"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
                 android:src="@drawable/left_arrow"
                 android:scaleType="fitCenter"
                 android:layout_centerVertical="true"/>
 
             <ImageButton
                 android:id="@+id/buttonD"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
                 android:src="@drawable/right_arrow"
                 android:scaleType="fitCenter"
                 android:layout_toRightOf="@+id/buttonG"
