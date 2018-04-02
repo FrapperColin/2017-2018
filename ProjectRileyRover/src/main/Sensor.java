@@ -35,9 +35,9 @@ public class Sensor extends Thread{
 	public void contact() throws InterruptedException {
 		while (running) {
 			int distance = getDistance();
-			if(10 < distance && distance <30 ) {
+			if(15 < distance && distance <25 ) {
 				controller.slowDown();
-			} else if(distance <= 10) {
+			} else if(distance <= 15) {
 				controller.contact();
 			}
 		}
@@ -45,7 +45,7 @@ public class Sensor extends Thread{
 	
 	public boolean isUltrasonicDetected() {
 		int distance = getDistance();
-		if(distance<35) {
+		if(distance<30) {
 			return true ;
 		}
 		return false ;

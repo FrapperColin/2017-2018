@@ -28,8 +28,8 @@ public class Controller {
     
 	public Controller()
 	{
-		this.leftMotor = new Motor(new EV3LargeRegulatedMotor(MotorPort.A));
-	    this.rightMotor = new Motor(new EV3LargeRegulatedMotor(MotorPort.D));
+		this.leftMotor = new Motor(new EV3LargeRegulatedMotor(MotorPort.D));
+	    this.rightMotor = new Motor(new EV3LargeRegulatedMotor(MotorPort.A));
 	    this.ultrasonicSensor = new Sensor(new EV3UltrasonicSensor(SensorPort.S2));
 		this.ultrasonicSensor.setController(this);
 		this.ultrasonicSensor.start();
@@ -175,12 +175,14 @@ public class Controller {
 		        rightMotor.movingBackward();
 		        leftMotor.getMotor().endSynchronization();
 	        }
-	        Thread.sleep(2000);
+	        Thread.sleep(4000);
 			leftMotor.getMotor().startSynchronization();
-	        leftMotor.stop();
-	        rightMotor.stop();
+	        leftMotor.movingForward();
+	        leftMotor.setSpeed(leftMotor.getPreviousSpeed());
+	        rightMotor.movingForward();
+	        rightMotor.setSpeed(rightMotor.getPreviousSpeed());
 	        leftMotor.getMotor().endSynchronization();
-	        actualState = stateStopped;
+	        actualState = stateMovingForward;
 		}
 	}
 }
