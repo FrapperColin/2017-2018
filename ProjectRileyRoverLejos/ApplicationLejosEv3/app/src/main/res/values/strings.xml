@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ApplicationLejosEv3</string>
+    <string name="entrer_mac_adresse">Entrez l\'EV3 mac adresse</string>
+    <string name="ok">OK</string>
+    <string name="Preference">ev3 preference</string>
+    <string name="EV3_key">ev3_mac_adresse</string>
+    <string name="avancer">Marche</string>
+    <string name="stop">Stop</string>
+
+    <string name="reculer">reculer</string>
+    <string name="droite">droite</string>
+    <string name="gauche">gauche</string>
+    <string name="accelerer">accelerer</string>
+    <string name="ralentir">ralentir</string>
+    <string name="exit">quitter</string>
+    <string name="enable_bt">Autorisez le bluetooth</string>
+    <string name="autoriser">Autoriser</string>
+    <string name="cancel">Cancel</string>
+    <string name="bt_failed">Impossible de se connecter à cette adresse</string>
+    <string name="bt_disabled">Autorisez le bluetooth pour continuer</string>
+    <string name="title_activity_speedometer">Speedometer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_wheel">Wheel</string>
+
+
+</resources>
