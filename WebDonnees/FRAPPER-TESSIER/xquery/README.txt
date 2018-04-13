@@ -1,0 +1,1 @@
+Executer le fichier execution.sh pour executer le programme générant le fichier distanciel.xml

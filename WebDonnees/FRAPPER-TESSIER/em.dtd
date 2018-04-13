@@ -1,0 +1,27 @@
+<!-- ajout des id partout... des noms peuvent contenir des espaces -->
+<!ELEMENT em (liste-pays,liste-espace-maritime)>
+
+<!ELEMENT liste-pays (pays)*>
+<!ELEMENT liste-espace-maritime (espace-maritime)*>
+
+<!ELEMENT pays (fleuve)*>
+<!ATTLIST pays
+  id-p ID #REQUIRED nom-p CDATA #REQUIRED
+  superficie CDATA #REQUIRED nbhab CDATA #REQUIRED>
+
+<!ELEMENT fleuve (parcourt)+>
+<!ATTLIST fleuve
+  id-f ID #REQUIRED nom-f CDATA #REQUIRED
+  longueur CDATA #REQUIRED se-jette IDREF #REQUIRED>
+
+<!ELEMENT parcourt EMPTY>
+<!ATTLIST parcourt
+  distance CDATA #REQUIRED id-pays IDREF #REQUIRED>
+
+<!ELEMENT espace-maritime (cotoie)+>
+<!ATTLIST espace-maritime
+  id-e ID #REQUIRED nom-e CDATA #REQUIRED
+  type (océan|mer|inconnu) 'inconnu'> <!-- type #REQUIRED -> 'inconnu' + ajout de 'inconnu' -->
+
+<!ELEMENT cotoie EMPTY>
+<!ATTLIST cotoie id-p IDREF #REQUIRED>
