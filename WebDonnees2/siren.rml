@@ -1,0 +1,108 @@
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix si: <http://www.example.org/si/> .
+
+# ------ Definition of a resource (subject) of type Enterprises
+<#Enterprise> rml:logicalSource [
+                rml:source "search.json";
+                rml:referenceFormulation ql:JSONPath ;
+                rml:iterator "$" ;
+            ] ;
+
+            rr:subjectMap [
+                rr:template "http://ods.dataset.com/Sirene/{$.recordid}"
+            ];
+
+            rr:predicateObjectMap [
+                rr:predicate rdfs:label;
+                rr:objectMap [
+                rml:reference "$.fields.siren"
+                ];
+            ],
+
+            [ rr:objectMap 
+                [ rml:reference "$.fields.siren" ];
+                rr:predicate <http://dbpedia.org/ontology/siren> 
+            ],
+
+
+        [ rr:objectMap [ rml:reference "$.fields.activite" ] ;
+            rr:predicate <http://dbpedia.org/ontology/discipline> ],
+
+        [ rr:objectMap [ rml:reference "$.fields.libapen" ] ;
+                rr:predicate <http://dbpedia.org/ontology/service> ],
+
+        [ rr:objectMap [ rml:reference "$.fields.siege" ] ;
+                rr:predicate <http://dbpedia.org/ontology/headquarter> ],
+
+        [ rr:objectMap [ rml:reference "$.fields.ddebact" ] ;
+                rr:predicate <http://dbpedia.org/ontology/formationDate> ],
+
+        [ rr:objectMap [ rml:reference "$.fields.saisonat" ] ;
+                rr:predicate <http://dbpedia.org/ontology/season> ],
+
+        [ rr:objectMap [ rml:reference "$.fields.categorie" ] ;
+                rr:predicate <http://dbpedia.org/ontology/legalForm> ],
+
+        [ rr:objectMap [ rml:reference "$.fields.proden" ] ;
+                rr:predicate <http://dbpedia.org/ontology/product> ],
+
+        [ rr:objectMap [ rml:reference "$.fields.l4_declaree" ] ;
+            rr:predicate <hhttp://dbpedia.org/ontology/Street> ],
+
+        [ rr:objectMap [ rml:reference "$.fields.l6_normalisee" ] ;
+            rr:predicate <hhttp://dbpedia.org/ontology/Locality> ],
+
+        [ rr:objectMap [ rml:reference "$.fields.l6_declaree" ] ;
+            rr:predicate <hhttp://dbpedia.org/ontology/Locality> ],
+
+        [ rr:objectMap [ rml:reference "$.fields.l7_normalisee" ] ;
+            rr:predicate <http://dbpedia.org/ontology/country> ],
+
+        [ rr:objectMap [ rml:reference "$.fields.libreg_new" ] ;
+            rr:predicate <http://dbpedia.org/ontology/Region> ],
+
+        [ rr:objectMap [ rml:reference "$.fields.libcom" ] ;
+            rr:predicate <http://dbpedia.org/ontology/city> ],
+
+        [ rr:objectMap [ rml:reference "$.fields.nom_dept" ] ;
+            rr:predicate <http://dbpedia.org/ontology/department> ],
+
+        [ rr:objectMap [ rml:reference "$.fields.prenom" ];
+            rr:predicate <http://dbpedia.org/ontology/Surname> ],
+
+        [ rr:objectMap [ rml:reference "$.fields.nom" ] ;
+            rr:predicate <http://dbpedia.org/ontology/name> ],
+
+        [ rr:objectMap [ rml:reference "$.fields.nomen_long" ] ;
+            rr:predicate <http://dbpedia.org/ontology/spouseName> ];
+###############################################################################################
+
+#Utilisation d'une autre ontologie existante, et utilisation du prédicat différent.
+        rr:predicateObjectMap [
+            rr:predicate gn:postalCode;
+            rr:objectMap [rml:reference "$.fields.codpos" ];
+            ];
+
+        rr:predicateObjectMap [
+            rr:predicate gn:population;
+            rr:objectMap [rml:reference "$.fields.libtu" ];
+            ];
+
+#Tentative de création d'une ontologie. Nous avons commencé à référencer nos propres champs, mais n'étions pas surs de la marche à suivre pour la création du fichier lié.
+        rr:predicateObjectMap [
+            rr:predicate si:siret;
+            rr:objectMap [rml:reference "$.fields.siret" ];
+            ];
+
+
+        rr:predicateObjectMap [
+            rr:predicate si:denominationEntreprise;
+            rr:objectMap [rml:reference "$.fields.l2_normalisee" ];
+            ].

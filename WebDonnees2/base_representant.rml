@@ -1,0 +1,48 @@
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ------ Definition of a resource (subject) of type RecordsField
+<#RecordsFieds> rml:logicalSource [ 
+				rml:source "representant.json";
+				rml:referenceFormulation ql:JSONPath ;
+				rml:iterator "$.[records]" ;
+            ] ;
+
+            rr:subjectMap [ 
+            	rr:template "http://ods.dataset.com/Representant/{$.siren}" ;
+            	:class schema:Representant 
+           	];
+
+    		rr:predicateObjectMap [ 
+    			rr:predicate rdfs:label;
+    			rr:objectMap [ 
+    				rml:reference "$.fields.siren"
+    			];
+            ],
+        [ rr:objectMap 
+        	[ rml:reference "$.fields.siren" ];
+            rr:predicate <http://dbpedia.org/ontology/siren> 
+        ],
+        [ rr:objectMap 
+        	[ rml:reference "$.fields.qualite" ];
+            rr:predicate rdfs:label
+         ],
+        [ rr:objectMap [ rml:reference "$.fields.denomination" ] ;
+            rr:predicate <hhttp://dbpedia.org/ontology/denomination> ],
+        [ rr:objectMap [ rml:reference "$.fields.nom_greffe" ] ;
+            rr:predicate <http://dbpedia.org/ontology/city> ],
+        [ rr:objectMap [ rml:reference "$.fields.type" ] ;
+            rr:predicate <http://dbpedia.org/ontology/type> ],
+        [ rr:objectMap [ rml:reference "$.fields.numero_gestion" ] ;
+            rr:predicate <http://dbpedia.org/ontology/number> ],
+        [ rr:objectMap [ rml:reference "$.fields.date_greffe" ] ;
+            rr:predicate <http://dbpedia.org/ontology/date> ],
+        [ rr:objectMap [ rml:reference "$.fields.prenoms" ] ;
+            rr:predicate <http://dbpedia.org/ontology/Surname> ],
+        [ rr:objectMap [ rml:reference "$.fields.nom_patronymique" ] ;
+            rr:predicate <http://dbpedia.org/ontology/name> ] .

@@ -1,0 +1,2277 @@
+[
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"654087bc57d632e519f749bfbf5a5b326c81a39f",
+         "fields":{
+            "qualite":"Administrateur",
+            "siren":"310622907",
+            "id_representant":27,
+            "denomination":"CHAMBRE D'AGRICULTURE DE HAUTE CORSE",
+            "nom_greffe":"Bastia",
+            "forme_juridique":"Autre forme juridique",
+            "libelle_evt":"Modifications relatives au(x) dirigeantsants",
+            "date_greffe":"2018-03-01",
+            "type":"Personne Morale",
+            "numero_gestion":"1992B00013"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"9ae087cbaa16a186aedeb9a96874b74d46db405d",
+         "fields":{
+            "qualite":"Associ\u00e9 ind\u00e9finiment responsable",
+            "siren":"351216981",
+            "id_representant":3,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Modifications relatives au(x) dirigeantsants",
+            "nom_patronymique":"FERRANDINI",
+            "date_greffe":"2017-06-07",
+            "type":"Personne Physique",
+            "prenoms":"Marie-Pierre",
+            "numero_gestion":"2005D00145"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"12af1a28775d1d05311eda9f13ba613bfe9a1a84",
+         "fields":{
+            "qualite":"Liquidateur",
+            "siren":"797670569",
+            "id_representant":1,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Modifications relatives au(x) dirigeantsants",
+            "nom_patronymique":"GIOVANNETTI",
+            "date_greffe":"2017-06-07",
+            "type":"Personne Physique",
+            "prenoms":"Pascal",
+            "numero_gestion":"2013B00473"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"c113e4d3cb4b353bffe93a03435c9adc52e47fcf",
+         "fields":{
+            "qualite":"G\u00e9rant",
+            "siren":"488766379",
+            "id_representant":1,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Dirigeant partant",
+            "nom_patronymique":"CALENDINI",
+            "date_greffe":"2017-06-07",
+            "type":"Personne Physique",
+            "prenoms":"Joseph Marie",
+            "numero_gestion":"2006B00109"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"9922368bc906aa3e70a1e9f0e02cde7adf932bc1",
+         "fields":{
+            "qualite":"G\u00e9rant",
+            "siren":"512043860",
+            "id_representant":1,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Dirigeant partant",
+            "nom_patronymique":"POGGI",
+            "date_greffe":"2017-06-15",
+            "type":"Personne Physique",
+            "prenoms":"Jos\u00e9pha",
+            "numero_gestion":"2009B00246"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"cf5b3c9397476e95293b41195bbf67898fc3499c",
+         "fields":{
+            "qualite":"G\u00e9rant",
+            "siren":"524949666",
+            "id_representant":2,
+            "nom_patronymique":"COLONNA",
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Dirigeant partant",
+            "nom_usage":"CORAZZINI",
+            "date_greffe":"2017-06-16",
+            "type":"Personne Physique",
+            "prenoms":"Karine, Louise, Jeanne",
+            "numero_gestion":"2010B00382"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"f83ca545dd3de14d32d0f9b34e5f57df14b2be2b",
+         "fields":{
+            "qualite":"Liquidateur",
+            "siren":"804727477",
+            "id_representant":1,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Modifications relatives au(x) dirigeantsants",
+            "nom_patronymique":"PONS",
+            "date_greffe":"2017-06-19",
+            "type":"Personne Physique",
+            "prenoms":"Eric, Norbert, Christophe",
+            "numero_gestion":"2014B00559"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"c2174d39900fcf75f63be53181674b6c1c45425f",
+         "fields":{
+            "qualite":"Commissaire aux comptes titulaire",
+            "siren":"318293073",
+            "id_representant":12,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Modifications relatives au(x) dirigeantsants",
+            "nom_patronymique":"LEFEBVRE",
+            "date_greffe":"2017-06-20",
+            "type":"Personne Physique",
+            "prenoms":"Guy",
+            "numero_gestion":"1993B00046"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"c484b884c1b6f3a3ac54b5c7b581cdc003293a0c",
+         "fields":{
+            "qualite":"Commissaire aux comptes suppl\u00e9ant",
+            "siren":"318293073",
+            "id_representant":8,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Dirigeant partant",
+            "nom_patronymique":"MEDINA",
+            "date_greffe":"2017-06-20",
+            "type":"Personne Physique",
+            "prenoms":"Franck",
+            "numero_gestion":"1993B00046"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"3161902552f05b6bcf37538061308b9f507d2422",
+         "fields":{
+            "qualite":"Associ\u00e9 ind\u00e9finiment responsable",
+            "siren":"534204730",
+            "id_representant":3,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Modifications relatives au(x) dirigeantsants",
+            "nom_patronymique":"COUDRY",
+            "date_greffe":"2017-06-23",
+            "type":"Personne Physique",
+            "prenoms":"C\u00e9line, Luce, Marie, Claire",
+            "numero_gestion":"2011D00223"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"9803ec918f75a6fab8f5afab8f68dcfb7c9c4d8e",
+         "fields":{
+            "qualite":"Associ\u00e9",
+            "siren":"482822822",
+            "id_representant":1,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Modifications relatives au(x) dirigeantsants",
+            "nom_patronymique":"ROSSI",
+            "date_greffe":"2017-06-26",
+            "type":"Personne Physique",
+            "prenoms":"Fran\u00e7ois",
+            "numero_gestion":"2005D00825"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"287c7c8b29ad7734d11f0d2ee967174ceb97164c",
+         "fields":{
+            "qualite":"Commissaire aux comptes titulaire",
+            "siren":"822110623",
+            "id_representant":4,
+            "denomination":"SCP FREDERIC MENON",
+            "nom_greffe":"Bastia",
+            "forme_juridique":"Soci\u00e9t\u00e9 civile",
+            "libelle_evt":"Nouveau dirigeant",
+            "date_greffe":"2017-06-26",
+            "type":"Personne Morale",
+            "numero_gestion":"2016B00525"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"00c26225b9a0afee2c1d5ac7a4f81b551f0486c4",
+         "fields":{
+            "qualite":"Associ\u00e9",
+            "siren":"520370172",
+            "id_representant":1,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Dirigeant partant",
+            "nom_patronymique":"VANUCCI",
+            "date_greffe":"2017-06-27",
+            "type":"Personne Physique",
+            "prenoms":"Pierre Paul",
+            "numero_gestion":"2010D00058"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"d7dc826676d0daa928a9d45730fc711e9c5de8ef",
+         "fields":{
+            "qualite":"Associ\u00e9",
+            "siren":"321987208",
+            "id_representant":2,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Modifications relatives au(x) dirigeantsants",
+            "nom_patronymique":"BODES",
+            "date_greffe":"2017-06-29",
+            "type":"Personne Physique",
+            "prenoms":"Marie-Paule",
+            "numero_gestion":"2009D00232"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"1f8ae998a94c6ace3ae55a46ec32db8ace3349a6",
+         "fields":{
+            "qualite":"Associ\u00e9 ind\u00e9finiment responsable",
+            "siren":"481966265",
+            "id_representant":3,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Modifications relatives au(x) dirigeantsants",
+            "nom_patronymique":"MORETTI",
+            "date_greffe":"2017-06-29",
+            "type":"Personne Physique",
+            "prenoms":"Nathalie Fran\u00e7oise",
+            "numero_gestion":"2005D00808"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"05303018bf2e0aa0fb1c7f9371de2041773afe13",
+         "fields":{
+            "qualite":"G\u00e9rant",
+            "siren":"481966265",
+            "id_representant":3,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Modifications relatives au(x) dirigeantsants",
+            "nom_patronymique":"MORETTI",
+            "date_greffe":"2017-06-30",
+            "type":"Personne Physique",
+            "prenoms":"Nathalie Fran\u00e7oise",
+            "numero_gestion":"2005D00808"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"6b5003238111563ff69dda3f348b754e3dc7b043",
+         "fields":{
+            "qualite":"G\u00e9rant",
+            "siren":"443215041",
+            "id_representant":1,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Dirigeant partant",
+            "nom_patronymique":"TOMASINI",
+            "date_greffe":"2017-07-04",
+            "type":"Personne Physique",
+            "prenoms":"Jean-Baptiste",
+            "numero_gestion":"2005D00639"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"83d2803cab59ae048e96d4581635a67551987394",
+         "fields":{
+            "qualite":"Associ\u00e9 ind\u00e9finiment responsable",
+            "siren":"820400810",
+            "id_representant":1,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Modifications relatives au(x) dirigeantsants",
+            "nom_patronymique":"CESARI",
+            "date_greffe":"2017-07-07",
+            "type":"Personne Physique",
+            "prenoms":"Mathieu",
+            "numero_gestion":"2016D00138"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"3a175e5fa38b63198472842ca004306f19983dbc",
+         "fields":{
+            "qualite":"G\u00e9rant",
+            "siren":"500479225",
+            "id_representant":1,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Modifications relatives au(x) dirigeantsants",
+            "nom_patronymique":"MESSINA",
+            "date_greffe":"2017-07-10",
+            "type":"Personne Physique",
+            "prenoms":"Hugues Fran\u00e7ois",
+            "numero_gestion":"2007D00253"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      },
+      {
+         "datasetid":"representants-des-entreprises",
+         "recordid":"94e88e8317e41a00cdae53b51d51e06beeaaa79a",
+         "fields":{
+            "qualite":"G\u00e9rant non associ\u00e9",
+            "siren":"318697778",
+            "id_representant":17,
+            "nom_greffe":"Bastia",
+            "libelle_evt":"Dirigeant partant",
+            "nom_patronymique":"BATTESTI",
+            "date_greffe":"2017-07-11",
+            "type":"Personne Physique",
+            "prenoms":"Jean, Michel",
+            "numero_gestion":"1979D00023"
+         },
+         "record_timestamp":"2018-03-07T09:03:00+00:00"
+      }
+   ],
+   "facet_groups":[
+      {
+         "name":"qualite",
+         "facets":[
+            {
+               "name":"G\u00e9rant",
+               "path":"G\u00e9rant",
+               "count":397850,
+               "state":"displayed"
+            },
+            {
+               "name":"Associ\u00e9",
+               "path":"Associ\u00e9",
+               "count":243844,
+               "state":"displayed"
+            },
+            {
+               "name":"Associ\u00e9 ind\u00e9finiment responsable",
+               "path":"Associ\u00e9 ind\u00e9finiment responsable",
+               "count":191099,
+               "state":"displayed"
+            },
+            {
+               "name":"Pr\u00e9sident",
+               "path":"Pr\u00e9sident",
+               "count":175649,
+               "state":"displayed"
+            },
+            {
+               "name":"g\u00e9rant",
+               "path":"g\u00e9rant",
+               "count":60983,
+               "state":"displayed"
+            },
+            {
+               "name":"Liquidateur",
+               "path":"Liquidateur",
+               "count":48152,
+               "state":"displayed"
+            },
+            {
+               "name":"Directeur g\u00e9n\u00e9ral",
+               "path":"Directeur g\u00e9n\u00e9ral",
+               "count":41340,
+               "state":"displayed"
+            },
+            {
+               "name":"Commissaire aux comptes titulaire",
+               "path":"Commissaire aux comptes titulaire",
+               "count":40448,
+               "state":"displayed"
+            },
+            {
+               "name":"Administrateur",
+               "path":"Administrateur",
+               "count":35951,
+               "state":"displayed"
+            },
+            {
+               "name":"Commissaire aux comptes suppl\u00e9ant",
+               "path":"Commissaire aux comptes suppl\u00e9ant",
+               "count":29929,
+               "state":"displayed"
+            },
+            {
+               "name":"pr\u00e9sident",
+               "path":"pr\u00e9sident",
+               "count":24773,
+               "state":"displayed"
+            },
+            {
+               "name":"Membre",
+               "path":"Membre",
+               "count":8418,
+               "state":"displayed"
+            },
+            {
+               "name":"directeur g\u00e9n\u00e9ral",
+               "path":"directeur g\u00e9n\u00e9ral",
+               "count":7370,
+               "state":"displayed"
+            },
+            {
+               "name":"Associ\u00e9 unique",
+               "path":"Associ\u00e9 unique",
+               "count":6482,
+               "state":"displayed"
+            },
+            {
+               "name":"commissaire aux comptes titulaire",
+               "path":"commissaire aux comptes titulaire",
+               "count":6301,
+               "state":"displayed"
+            },
+            {
+               "name":"Membre du conseil de surveillance",
+               "path":"Membre du conseil de surveillance",
+               "count":5919,
+               "state":"displayed"
+            },
+            {
+               "name":"commissaire aux comptes suppl\u00e9ant",
+               "path":"commissaire aux comptes suppl\u00e9ant",
+               "count":5173,
+               "state":"displayed"
+            },
+            {
+               "name":"Associ\u00e9 ind\u00e9finiment et solidairement responsable",
+               "path":"Associ\u00e9 ind\u00e9finiment et solidairement responsable",
+               "count":4718,
+               "state":"displayed"
+            },
+            {
+               "name":"administrateur",
+               "path":"administrateur",
+               "count":4616,
+               "state":"displayed"
+            },
+            {
+               "name":"Associ\u00e9 en nom",
+               "path":"Associ\u00e9 en nom",
+               "count":4462,
+               "state":"displayed"
+            },
+            {
+               "name":"G\u00e9rant non associ\u00e9",
+               "path":"G\u00e9rant non associ\u00e9",
+               "count":4277,
+               "state":"displayed"
+            },
+            {
+               "name":"Pr\u00e9sident du conseil d'administration",
+               "path":"Pr\u00e9sident du conseil d'administration",
+               "count":4132,
+               "state":"displayed"
+            },
+            {
+               "name":"Directeur g\u00e9n\u00e9ral d\u00e9l\u00e9gu\u00e9",
+               "path":"Directeur g\u00e9n\u00e9ral d\u00e9l\u00e9gu\u00e9",
+               "count":3507,
+               "state":"displayed"
+            },
+            {
+               "name":"Commissaire aux comptes",
+               "path":"Commissaire aux comptes",
+               "count":3320,
+               "state":"displayed"
+            },
+            {
+               "name":"liquidateur",
+               "path":"liquidateur",
+               "count":3085,
+               "state":"displayed"
+            },
+            {
+               "name":"Vice-pr\u00e9sident",
+               "path":"Vice-pr\u00e9sident",
+               "count":1941,
+               "state":"displayed"
+            },
+            {
+               "name":"G\u00e9rant et associ\u00e9 ind\u00e9finiment et solidairement responsable",
+               "path":"G\u00e9rant et associ\u00e9 ind\u00e9finiment et solidairement responsable",
+               "count":1808,
+               "state":"displayed"
+            },
+            {
+               "name":"Membre du comit\u00e9 de direction",
+               "path":"Membre du comit\u00e9 de direction",
+               "count":1799,
+               "state":"displayed"
+            },
+            {
+               "name":"Membre du directoire",
+               "path":"Membre du directoire",
+               "count":1625,
+               "state":"displayed"
+            },
+            {
+               "name":"Actionnaire unique",
+               "path":"Actionnaire unique",
+               "count":1535,
+               "state":"displayed"
+            },
+            {
+               "name":"Conjoint mari\u00e9 ou pacs\u00e9, collaborateur",
+               "path":"Conjoint mari\u00e9 ou pacs\u00e9, collaborateur",
+               "count":1474,
+               "state":"displayed"
+            },
+            {
+               "name":"Pr\u00e9sident du conseil de surveillance",
+               "path":"Pr\u00e9sident du conseil de surveillance",
+               "count":1266,
+               "state":"displayed"
+            },
+            {
+               "name":"Personne ayant le pouvoir d'engager \u00e0 titre habituel la soci\u00e9t\u00e9",
+               "path":"Personne ayant le pouvoir d'engager \u00e0 titre habituel la soci\u00e9t\u00e9",
+               "count":1209,
+               "state":"displayed"
+            },
+            {
+               "name":"Contr\u00f4leur de gestion",
+               "path":"Contr\u00f4leur de gestion",
+               "count":1099,
+               "state":"displayed"
+            },
+            {
+               "name":"Tr\u00e9sorier",
+               "path":"Tr\u00e9sorier",
+               "count":1083,
+               "state":"displayed"
+            },
+            {
+               "name":"commissaire aux comptes",
+               "path":"commissaire aux comptes",
+               "count":1038,
+               "state":"displayed"
+            },
+            {
+               "name":"Associ\u00e9,G\u00e9rant",
+               "path":"Associ\u00e9,G\u00e9rant",
+               "count":1026,
+               "state":"displayed"
+            },
+            {
+               "name":"Secr\u00e9taire",
+               "path":"Secr\u00e9taire",
+               "count":862,
+               "state":"displayed"
+            },
+            {
+               "name":"Membre du comit\u00e9 de surveillance",
+               "path":"Membre du comit\u00e9 de surveillance",
+               "count":796,
+               "state":"displayed"
+            },
+            {
+               "name":"membre du conseil de surveillance",
+               "path":"membre du conseil de surveillance",
+               "count":752,
+               "state":"displayed"
+            },
+            {
+               "name":"pr\u00e9sident du conseil d'administration",
+               "path":"pr\u00e9sident du conseil d'administration",
+               "count":663,
+               "state":"displayed"
+            },
+            {
+               "name":"Contr\u00f4leur des comptes",
+               "path":"Contr\u00f4leur des comptes",
+               "count":642,
+               "state":"displayed"
+            },
+            {
+               "name":"G\u00e9rant,Associ\u00e9 ind\u00e9finiment et solidairement responsable",
+               "path":"G\u00e9rant,Associ\u00e9 ind\u00e9finiment et solidairement responsable",
+               "count":620,
+               "state":"displayed"
+            },
+            {
+               "name":"Pr\u00e9sident du conseil d'administration,Directeur g\u00e9n\u00e9ral",
+               "path":"Pr\u00e9sident du conseil d'administration,Directeur g\u00e9n\u00e9ral",
+               "count":598,
+               "state":"displayed"
+            },
+            {
+               "name":"Membre du conseil d'administration",
+               "path":"Membre du conseil d'administration",
+               "count":579,
+               "state":"displayed"
+            },
+            {
+               "name":"Pr\u00e9sident du directoire",
+               "path":"Pr\u00e9sident du directoire",
+               "count":567,
+               "state":"displayed"
+            },
+            {
+               "name":"Responsable en France",
+               "path":"Responsable en France",
+               "count":550,
+               "state":"displayed"
+            },
+            {
+               "name":"directeur g\u00e9n\u00e9ral d\u00e9l\u00e9gu\u00e9",
+               "path":"directeur g\u00e9n\u00e9ral d\u00e9l\u00e9gu\u00e9",
+               "count":546,
+               "state":"displayed"
+            },
+            {
+               "name":"Responsable \u00e0 l'\u00e9tranger",
+               "path":"Responsable \u00e0 l'\u00e9tranger",
+               "count":501,
+               "state":"displayed"
+            },
+            {
+               "name":"Administrateur provisoire",
+               "path":"Administrateur provisoire",
+               "count":500,
+               "state":"displayed"
+            },
+            {
+               "name":"Membre exon\u00e9r\u00e9 des dettes n\u00e9es ant\u00e9rieurement \u00e0 son entr\u00e9e",
+               "path":"Membre exon\u00e9r\u00e9 des dettes n\u00e9es ant\u00e9rieurement \u00e0 son entr\u00e9e",
+               "count":499,
+               "state":"displayed"
+            },
+            {
+               "name":"vice-pr\u00e9sident",
+               "path":"vice-pr\u00e9sident",
+               "count":465,
+               "state":"displayed"
+            },
+            {
+               "name":"Vice-pr\u00e9sident du conseil de surveillance",
+               "path":"Vice-pr\u00e9sident du conseil de surveillance",
+               "count":459,
+               "state":"displayed"
+            },
+            {
+               "name":"Dirigeant en France d'une personne morale \u00e9trang\u00e8re",
+               "path":"Dirigeant en France d'une personne morale \u00e9trang\u00e8re",
+               "count":457,
+               "state":"displayed"
+            },
+            {
+               "name":"Membre du comit\u00e9 strat\u00e9gique",
+               "path":"Membre du comit\u00e9 strat\u00e9gique",
+               "count":457,
+               "state":"displayed"
+            },
+            {
+               "name":"Vice-pr\u00e9sident du conseil d'administration",
+               "path":"Vice-pr\u00e9sident du conseil d'administration",
+               "count":404,
+               "state":"displayed"
+            },
+            {
+               "name":"Responsable en France et \u00e0 l'\u00e9tranger",
+               "path":"Responsable en France et \u00e0 l'\u00e9tranger",
+               "count":376,
+               "state":"displayed"
+            },
+            {
+               "name":"Directeur",
+               "path":"Directeur",
+               "count":364,
+               "state":"displayed"
+            },
+            {
+               "name":"Associ\u00e9 commandit\u00e9",
+               "path":"Associ\u00e9 commandit\u00e9",
+               "count":308,
+               "state":"displayed"
+            },
+            {
+               "name":"membre du comit\u00e9 de direction",
+               "path":"membre du comit\u00e9 de direction",
+               "count":291,
+               "state":"displayed"
+            },
+            {
+               "name":"membre du directoire",
+               "path":"membre du directoire",
+               "count":268,
+               "state":"displayed"
+            },
+            {
+               "name":"Associ\u00e9 commanditaire",
+               "path":"Associ\u00e9 commanditaire",
+               "count":238,
+               "state":"displayed"
+            },
+            {
+               "name":"Directeur g\u00e9n\u00e9ral,Administrateur",
+               "path":"Directeur g\u00e9n\u00e9ral,Administrateur",
+               "count":232,
+               "state":"displayed"
+            },
+            {
+               "name":"secr\u00e9taire",
+               "path":"secr\u00e9taire",
+               "count":219,
+               "state":"displayed"
+            },
+            {
+               "name":"Membre du conseil de direction",
+               "path":"Membre du conseil de direction",
+               "count":189,
+               "state":"displayed"
+            },
+            {
+               "name":"Pr\u00e9sident du comit\u00e9 de surveillance",
+               "path":"Pr\u00e9sident du comit\u00e9 de surveillance",
+               "count":187,
+               "state":"displayed"
+            },
+            {
+               "name":"Indivisaire",
+               "path":"Indivisaire",
+               "count":185,
+               "state":"displayed"
+            },
+            {
+               "name":"Directeur g\u00e9n\u00e9ral d\u00e9l\u00e9gu\u00e9,Administrateur",
+               "path":"Directeur g\u00e9n\u00e9ral d\u00e9l\u00e9gu\u00e9,Administrateur",
+               "count":181,
+               "state":"displayed"
+            },
+            {
+               "name":"Pr\u00e9sident du comit\u00e9 de direction",
+               "path":"Pr\u00e9sident du comit\u00e9 de direction",
+               "count":180,
+               "state":"displayed"
+            },
+            {
+               "name":"pr\u00e9sident du conseil de surveillance",
+               "path":"pr\u00e9sident du conseil de surveillance",
+               "count":175,
+               "state":"displayed"
+            },
+            {
+               "name":"Membre du comit\u00e9 ex\u00e9cutif",
+               "path":"Membre du comit\u00e9 ex\u00e9cutif",
+               "count":166,
+               "state":"displayed"
+            },
+            {
+               "name":"vice pr\u00e9sident du conseil de surveillance",
+               "path":"vice pr\u00e9sident du conseil de surveillance",
+               "count":162,
+               "state":"displayed"
+            },
+            {
+               "name":"contr\u00f4leur gestion",
+               "path":"contr\u00f4leur gestion",
+               "count":157,
+               "state":"displayed"
+            },
+            {
+               "name":"Repr\u00e9sentant en France",
+               "path":"Repr\u00e9sentant en France",
+               "count":156,
+               "state":"displayed"
+            },
+            {
+               "name":"Vice-Pr\u00e9sident,Membre du conseil de surveillance",
+               "path":"Vice-Pr\u00e9sident,Membre du conseil de surveillance",
+               "count":155,
+               "state":"displayed"
+            },
+            {
+               "name":"Directeur technique",
+               "path":"Directeur technique",
+               "count":151,
+               "state":"displayed"
+            },
+            {
+               "name":"Fond\u00e9 de pouvoir",
+               "path":"Fond\u00e9 de pouvoir",
+               "count":151,
+               "state":"displayed"
+            },
+            {
+               "name":"Directeur g\u00e9n\u00e9ral adjoint",
+               "path":"Directeur g\u00e9n\u00e9ral adjoint",
+               "count":146,
+               "state":"displayed"
+            },
+            {
+               "name":"Membre du comit\u00e9 d'administration",
+               "path":"Membre du comit\u00e9 d'administration",
+               "count":141,
+               "state":"displayed"
+            },
+            {
+               "name":"membre",
+               "path":"membre",
+               "count":140,
+               "state":"displayed"
+            },
+            {
+               "name":"tr\u00e9sorier",
+               "path":"tr\u00e9sorier",
+               "count":138,
+               "state":"displayed"
+            },
+            {
+               "name":"pr\u00e9sident du directoire",
+               "path":"pr\u00e9sident du directoire",
+               "count":128,
+               "state":"displayed"
+            },
+            {
+               "name":"Pr\u00e9sident du comit\u00e9 de suivi",
+               "path":"Pr\u00e9sident du comit\u00e9 de suivi",
+               "count":120,
+               "state":"displayed"
+            },
+            {
+               "name":"Administrateur repr\u00e9sentant les salari\u00e9s",
+               "path":"Administrateur repr\u00e9sentant les salari\u00e9s",
+               "count":110,
+               "state":"displayed"
+            },
+            {
+               "name":"Tr\u00e9sorier adjoint",
+               "path":"Tr\u00e9sorier adjoint",
+               "count":106,
+               "state":"displayed"
+            },
+            {
+               "name":"Dirigeant \u00e0 l'\u00e9tranger d'une personne morale \u00e9trang\u00e8re",
+               "path":"Dirigeant \u00e0 l'\u00e9tranger d'une personne morale \u00e9trang\u00e8re",
+               "count":103,
+               "state":"displayed"
+            },
+            {
+               "name":"Pharmacien responsable",
+               "path":"Pharmacien responsable",
+               "count":98,
+               "state":"displayed"
+            },
+            {
+               "name":"Pr\u00e9sident du conseil d'administration,Administrateur",
+               "path":"Pr\u00e9sident du conseil d'administration,Administrateur",
+               "count":94,
+               "state":"displayed"
+            },
+            {
+               "name":"contr\u00f4leur des comptes",
+               "path":"contr\u00f4leur des comptes",
+               "count":94,
+               "state":"displayed"
+            },
+            {
+               "name":"Administrateur repr\u00e9sentant l'Etat",
+               "path":"Administrateur repr\u00e9sentant l'Etat",
+               "count":92,
+               "state":"displayed"
+            },
+            {
+               "name":"Associ\u00e9 non exploitant",
+               "path":"Associ\u00e9 non exploitant",
+               "count":87,
+               "state":"displayed"
+            },
+            {
+               "name":"Membre du comit\u00e9 directeur",
+               "path":"Membre du comit\u00e9 directeur",
+               "count":82,
+               "state":"displayed"
+            },
+            {
+               "name":"Secr\u00e9taire adjoint",
+               "path":"Secr\u00e9taire adjoint",
+               "count":81,
+               "state":"displayed"
+            },
+            {
+               "name":"Pr\u00e9sident du comit\u00e9 d'administration",
+               "path":"Pr\u00e9sident du comit\u00e9 d'administration",
+               "count":76,
+               "state":"displayed"
+            },
+            {
+               "name":"Liquidateur,Associ\u00e9",
+               "path":"Liquidateur,Associ\u00e9",
+               "count":74,
+               "state":"displayed"
+            },
+            {
+               "name":"administrateur provisoire",
+               "path":"administrateur provisoire",
+               "count":73,
+               "state":"displayed"
+            },
+            {
+               "name":"membre du comit\u00e9 de surveillance",
+               "path":"membre du comit\u00e9 de surveillance",
+               "count":73,
+               "state":"displayed"
+            },
+            {
+               "name":"Repr\u00e9sentant",
+               "path":"Repr\u00e9sentant",
+               "count":70,
+               "state":"displayed"
+            },
+            {
+               "name":"Sans correspondance / non repris",
+               "path":"Sans correspondance / non repris",
+               "count":67,
+               "state":"displayed"
+            },
+            {
+               "name":"Membre du conseil",
+               "path":"Membre du conseil",
+               "count":66,
+               "state":"displayed"
+            }
+         ]
+      },
+      {
+         "name":"type",
+         "facets":[
+            {
+               "name":"Personne Physique",
+               "path":"Personne Physique",
+               "count":1210207,
+               "state":"displayed"
+            },
+            {
+               "name":"Personne Morale",
+               "path":"Personne Morale",
+               "count":188743,
+               "state":"displayed"
+            }
+         ]
+      },
+      {
+         "name":"libelle_evt",
+         "facets":[
+            {
+               "name":"Nouveau dirigeant",
+               "path":"Nouveau dirigeant",
+               "count":828090,
+               "state":"displayed"
+            },
+            {
+               "name":"Modifications relatives au(x) dirigeantsants",
+               "path":"Modifications relatives au(x) dirigeantsants",
+               "count":364107,
+               "state":"displayed"
+            },
+            {
+               "name":"Dirigeant partant",
+               "path":"Dirigeant partant",
+               "count":206732,
+               "state":"displayed"
+            },
+            {
+               "name":"Modifications relatives au(x) dirigeants",
+               "path":"Modifications relatives au(x) dirigeants",
+               "count":1,
+               "state":"displayed"
+            }
+         ]
+      },
+      {
+         "name":"nom_greffe",
+         "facets":[
+            {
+               "name":"Paris",
+               "path":"Paris",
+               "count":140540,
+               "state":"displayed"
+            },
+            {
+               "name":"Nanterre",
+               "path":"Nanterre",
+               "count":75741,
+               "state":"displayed"
+            },
+            {
+               "name":"Lyon",
+               "path":"Lyon",
+               "count":43619,
+               "state":"displayed"
+            },
+            {
+               "name":"Bordeaux",
+               "path":"Bordeaux",
+               "count":43470,
+               "state":"displayed"
+            },
+            {
+               "name":"Bobigny",
+               "path":"Bobigny",
+               "count":39591,
+               "state":"displayed"
+            },
+            {
+               "name":"Cr\u00e9teil",
+               "path":"Cr\u00e9teil",
+               "count":34171,
+               "state":"displayed"
+            },
+            {
+               "name":"Versailles",
+               "path":"Versailles",
+               "count":32667,
+               "state":"displayed"
+            },
+            {
+               "name":"Marseille",
+               "path":"Marseille",
+               "count":30828,
+               "state":"displayed"
+            },
+            {
+               "name":"Evry",
+               "path":"Evry",
+               "count":28016,
+               "state":"displayed"
+            },
+            {
+               "name":"Lille M\u00e9tropole",
+               "path":"Lille M\u00e9tropole",
+               "count":27674,
+               "state":"displayed"
+            },
+            {
+               "name":"Rennes",
+               "path":"Rennes",
+               "count":27392,
+               "state":"displayed"
+            },
+            {
+               "name":"Pontoise",
+               "path":"Pontoise",
+               "count":26989,
+               "state":"displayed"
+            },
+            {
+               "name":"Toulouse",
+               "path":"Toulouse",
+               "count":24249,
+               "state":"displayed"
+            },
+            {
+               "name":"Nantes",
+               "path":"Nantes",
+               "count":20623,
+               "state":"displayed"
+            },
+            {
+               "name":"Montpellier",
+               "path":"Montpellier",
+               "count":20378,
+               "state":"displayed"
+            },
+            {
+               "name":"Nice",
+               "path":"Nice",
+               "count":17448,
+               "state":"displayed"
+            },
+            {
+               "name":"Avignon",
+               "path":"Avignon",
+               "count":15453,
+               "state":"displayed"
+            },
+            {
+               "name":"Grenoble",
+               "path":"Grenoble",
+               "count":15322,
+               "state":"displayed"
+            },
+            {
+               "name":"Toulon",
+               "path":"Toulon",
+               "count":14861,
+               "state":"displayed"
+            },
+            {
+               "name":"Chambery",
+               "path":"Chambery",
+               "count":14203,
+               "state":"displayed"
+            },
+            {
+               "name":"Compi\u00e8gne",
+               "path":"Compi\u00e8gne",
+               "count":13448,
+               "state":"displayed"
+            },
+            {
+               "name":"Aix-en-Provence",
+               "path":"Aix-en-Provence",
+               "count":13121,
+               "state":"displayed"
+            },
+            {
+               "name":"Angers",
+               "path":"Angers",
+               "count":12403,
+               "state":"displayed"
+            },
+            {
+               "name":"Annecy",
+               "path":"Annecy",
+               "count":12226,
+               "state":"displayed"
+            },
+            {
+               "name":"Melun",
+               "path":"Melun",
+               "count":12053,
+               "state":"displayed"
+            },
+            {
+               "name":"Saint-\u00c9tienne",
+               "path":"Saint-\u00c9tienne",
+               "count":12037,
+               "state":"displayed"
+            },
+            {
+               "name":"Bourg-en-Bresse",
+               "path":"Bourg-en-Bresse",
+               "count":11983,
+               "state":"displayed"
+            },
+            {
+               "name":"Dijon",
+               "path":"Dijon",
+               "count":11960,
+               "state":"displayed"
+            },
+            {
+               "name":"Orl\u00e9ans",
+               "path":"Orl\u00e9ans",
+               "count":11953,
+               "state":"displayed"
+            },
+            {
+               "name":"Le Mans",
+               "path":"Le Mans",
+               "count":11929,
+               "state":"displayed"
+            },
+            {
+               "name":"La Roche-sur-Yon",
+               "path":"La Roche-sur-Yon",
+               "count":11460,
+               "state":"displayed"
+            },
+            {
+               "name":"N\u00eemes",
+               "path":"N\u00eemes",
+               "count":11399,
+               "state":"displayed"
+            },
+            {
+               "name":"Meaux",
+               "path":"Meaux",
+               "count":11037,
+               "state":"displayed"
+            },
+            {
+               "name":"Reims",
+               "path":"Reims",
+               "count":10906,
+               "state":"displayed"
+            },
+            {
+               "name":"Brest",
+               "path":"Brest",
+               "count":10364,
+               "state":"displayed"
+            },
+            {
+               "name":"Rouen",
+               "path":"Rouen",
+               "count":10341,
+               "state":"displayed"
+            },
+            {
+               "name":"Clermont-Ferrand",
+               "path":"Clermont-Ferrand",
+               "count":10204,
+               "state":"displayed"
+            },
+            {
+               "name":"Tours",
+               "path":"Tours",
+               "count":9852,
+               "state":"displayed"
+            },
+            {
+               "name":"Caen",
+               "path":"Caen",
+               "count":9553,
+               "state":"displayed"
+            },
+            {
+               "name":"Arras",
+               "path":"Arras",
+               "count":9231,
+               "state":"displayed"
+            },
+            {
+               "name":"Romans",
+               "path":"Romans",
+               "count":9211,
+               "state":"displayed"
+            },
+            {
+               "name":"Perpignan",
+               "path":"Perpignan",
+               "count":8875,
+               "state":"displayed"
+            },
+            {
+               "name":"Bayonne",
+               "path":"Bayonne",
+               "count":8847,
+               "state":"displayed"
+            },
+            {
+               "name":"Niort",
+               "path":"Niort",
+               "count":8675,
+               "state":"displayed"
+            },
+            {
+               "name":"Nancy",
+               "path":"Nancy",
+               "count":8602,
+               "state":"displayed"
+            },
+            {
+               "name":"Poitiers",
+               "path":"Poitiers",
+               "count":8491,
+               "state":"displayed"
+            },
+            {
+               "name":"La Rochelle",
+               "path":"La Rochelle",
+               "count":8408,
+               "state":"displayed"
+            },
+            {
+               "name":"Saint-Brieuc",
+               "path":"Saint-Brieuc",
+               "count":8375,
+               "state":"displayed"
+            },
+            {
+               "name":"Boulogne-sur-Mer",
+               "path":"Boulogne-sur-Mer",
+               "count":8146,
+               "state":"displayed"
+            },
+            {
+               "name":"B\u00e9ziers",
+               "path":"B\u00e9ziers",
+               "count":7974,
+               "state":"displayed"
+            },
+            {
+               "name":"Saint-Nazaire",
+               "path":"Saint-Nazaire",
+               "count":7862,
+               "state":"displayed"
+            },
+            {
+               "name":"Laval",
+               "path":"Laval",
+               "count":7857,
+               "state":"displayed"
+            },
+            {
+               "name":"Lorient",
+               "path":"Lorient",
+               "count":7796,
+               "state":"displayed"
+            },
+            {
+               "name":"Evreux",
+               "path":"Evreux",
+               "count":7638,
+               "state":"displayed"
+            },
+            {
+               "name":"Pau",
+               "path":"Pau",
+               "count":7615,
+               "state":"displayed"
+            },
+            {
+               "name":"Antibes",
+               "path":"Antibes",
+               "count":7322,
+               "state":"displayed"
+            },
+            {
+               "name":"Cannes",
+               "path":"Cannes",
+               "count":7303,
+               "state":"displayed"
+            },
+            {
+               "name":"Amiens",
+               "path":"Amiens",
+               "count":7206,
+               "state":"displayed"
+            },
+            {
+               "name":"Besan\u00e7on",
+               "path":"Besan\u00e7on",
+               "count":7121,
+               "state":"displayed"
+            },
+            {
+               "name":"Draguignan",
+               "path":"Draguignan",
+               "count":7084,
+               "state":"displayed"
+            },
+            {
+               "name":"Salon-de-Provence",
+               "path":"Salon-de-Provence",
+               "count":6979,
+               "state":"displayed"
+            },
+            {
+               "name":"Quimper",
+               "path":"Quimper",
+               "count":6959,
+               "state":"displayed"
+            },
+            {
+               "name":"Agen",
+               "path":"Agen",
+               "count":6735,
+               "state":"displayed"
+            },
+            {
+               "name":"Vienne",
+               "path":"Vienne",
+               "count":6643,
+               "state":"displayed"
+            },
+            {
+               "name":"Valenciennes",
+               "path":"Valenciennes",
+               "count":6602,
+               "state":"displayed"
+            },
+            {
+               "name":"Sedan",
+               "path":"Sedan",
+               "count":6569,
+               "state":"displayed"
+            },
+            {
+               "name":"Epinal",
+               "path":"Epinal",
+               "count":6460,
+               "state":"displayed"
+            },
+            {
+               "name":"Fr\u00e9jus",
+               "path":"Fr\u00e9jus",
+               "count":6379,
+               "state":"displayed"
+            },
+            {
+               "name":"Saintes",
+               "path":"Saintes",
+               "count":6278,
+               "state":"displayed"
+            },
+            {
+               "name":"Thonon-les-Bains",
+               "path":"Thonon-les-Bains",
+               "count":6254,
+               "state":"displayed"
+            },
+            {
+               "name":"Saint-Malo",
+               "path":"Saint-Malo",
+               "count":6249,
+               "state":"displayed"
+            },
+            {
+               "name":"Vannes",
+               "path":"Vannes",
+               "count":6183,
+               "state":"displayed"
+            },
+            {
+               "name":"Angoul\u00e8me",
+               "path":"Angoul\u00e8me",
+               "count":6121,
+               "state":"displayed"
+            },
+            {
+               "name":"Rodez",
+               "path":"Rodez",
+               "count":6028,
+               "state":"displayed"
+            },
+            {
+               "name":"Chalon-sur-Sa\u00f4ne",
+               "path":"Chalon-sur-Sa\u00f4ne",
+               "count":5988,
+               "state":"displayed"
+            },
+            {
+               "name":"Limoges",
+               "path":"Limoges",
+               "count":5776,
+               "state":"displayed"
+            },
+            {
+               "name":"Ajaccio",
+               "path":"Ajaccio",
+               "count":5657,
+               "state":"displayed"
+            },
+            {
+               "name":"Tarascon",
+               "path":"Tarascon",
+               "count":5627,
+               "state":"displayed"
+            },
+            {
+               "name":"Le Havre",
+               "path":"Le Havre",
+               "count":5544,
+               "state":"displayed"
+            },
+            {
+               "name":"Blois",
+               "path":"Blois",
+               "count":5470,
+               "state":"displayed"
+            },
+            {
+               "name":"Grasse",
+               "path":"Grasse",
+               "count":5401,
+               "state":"displayed"
+            },
+            {
+               "name":"Coutances",
+               "path":"Coutances",
+               "count":5304,
+               "state":"displayed"
+            },
+            {
+               "name":"Troyes",
+               "path":"Troyes",
+               "count":5223,
+               "state":"displayed"
+            },
+            {
+               "name":"Carcassonne",
+               "path":"Carcassonne",
+               "count":4834,
+               "state":"displayed"
+            },
+            {
+               "name":"Dax",
+               "path":"Dax",
+               "count":4829,
+               "state":"displayed"
+            },
+            {
+               "name":"Chartres",
+               "path":"Chartres",
+               "count":4783,
+               "state":"displayed"
+            },
+            {
+               "name":"Montauban",
+               "path":"Montauban",
+               "count":4612,
+               "state":"displayed"
+            },
+            {
+               "name":"P\u00e9rigueux",
+               "path":"P\u00e9rigueux",
+               "count":4584,
+               "state":"displayed"
+            },
+            {
+               "name":"Belfort",
+               "path":"Belfort",
+               "count":4541,
+               "state":"displayed"
+            },
+            {
+               "name":"Tarbes",
+               "path":"Tarbes",
+               "count":4506,
+               "state":"displayed"
+            },
+            {
+               "name":"Alen\u00e7on",
+               "path":"Alen\u00e7on",
+               "count":4441,
+               "state":"displayed"
+            },
+            {
+               "name":"Douai",
+               "path":"Douai",
+               "count":4313,
+               "state":"displayed"
+            },
+            {
+               "name":"Roanne",
+               "path":"Roanne",
+               "count":4248,
+               "state":"displayed"
+            },
+            {
+               "name":"Lons-le-Saunier",
+               "path":"Lons-le-Saunier",
+               "count":4226,
+               "state":"displayed"
+            },
+            {
+               "name":"Libourne",
+               "path":"Libourne",
+               "count":4136,
+               "state":"displayed"
+            },
+            {
+               "name":"M\u00e2con",
+               "path":"M\u00e2con",
+               "count":4097,
+               "state":"displayed"
+            },
+            {
+               "name":"Castres",
+               "path":"Castres",
+               "count":4003,
+               "state":"displayed"
+            },
+            {
+               "name":"Saint-Quentin",
+               "path":"Saint-Quentin",
+               "count":3994,
+               "state":"displayed"
+            },
+            {
+               "name":"Villefranche-Tarare",
+               "path":"Villefranche-Tarare",
+               "count":3985,
+               "state":"displayed"
+            },
+            {
+               "name":"Nevers",
+               "path":"Nevers",
+               "count":3974,
+               "state":"displayed"
+            }
+         ]
+      },
+      {
+         "name":"date_greffe",
+         "facets":[
+            {
+               "name":"2007",
+               "path":"2007",
+               "count":2,
+               "state":"displayed"
+            },
+            {
+               "name":"2009",
+               "path":"2009",
+               "count":1,
+               "state":"displayed"
+            },
+            {
+               "name":"2010",
+               "path":"2010",
+               "count":2,
+               "state":"displayed"
+            },
+            {
+               "name":"2011",
+               "path":"2011",
+               "count":2,
+               "state":"displayed"
+            },
+            {
+               "name":"2012",
+               "path":"2012",
+               "count":11,
+               "state":"displayed"
+            },
+            {
+               "name":"2013",
+               "path":"2013",
+               "count":14,
+               "state":"displayed"
+            },
+            {
+               "name":"2014",
+               "path":"2014",
+               "count":23,
+               "state":"displayed"
+            },
+            {
+               "name":"2015",
+               "path":"2015",
+               "count":88,
+               "state":"displayed"
+            },
+            {
+               "name":"2016",
+               "path":"2016",
+               "count":205,
+               "state":"displayed"
+            },
+            {
+               "name":"2017",
+               "path":"2017",
+               "count":1072013,
+               "state":"displayed"
+            },
+            {
+               "name":"2018",
+               "path":"2018",
+               "count":326569,
+               "state":"displayed"
+            }
+         ]
+      },
+      {
+         "name":"forme_juridique",
+         "facets":[
+            {
+               "name":"Soci\u00e9t\u00e9 par actions simplifi\u00e9e",
+               "path":"Soci\u00e9t\u00e9 par actions simplifi\u00e9e",
+               "count":57153,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 \u00e0 responsabilit\u00e9 limit\u00e9e",
+               "path":"Soci\u00e9t\u00e9 \u00e0 responsabilit\u00e9 limit\u00e9e",
+               "count":50557,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 anonyme",
+               "path":"Soci\u00e9t\u00e9 anonyme",
+               "count":14788,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile",
+               "path":"Soci\u00e9t\u00e9 civile",
+               "count":8416,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 par actions simplifi\u00e9e \u00e0 associ\u00e9 unique",
+               "path":"Soci\u00e9t\u00e9 par actions simplifi\u00e9e \u00e0 associ\u00e9 unique",
+               "count":7733,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 \u00e0 responsabilit\u00e9 limit\u00e9e \u00e0 associ\u00e9 unique",
+               "path":"Soci\u00e9t\u00e9 \u00e0 responsabilit\u00e9 limit\u00e9e \u00e0 associ\u00e9 unique",
+               "count":5632,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 anonyme \u00e0 conseil d'administration",
+               "path":"Soci\u00e9t\u00e9 anonyme \u00e0 conseil d'administration",
+               "count":3980,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile immobili\u00e8re",
+               "path":"Soci\u00e9t\u00e9 civile immobili\u00e8re",
+               "count":3917,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 par actions simplifi\u00e9e \u00e0 capital variable",
+               "path":"Soci\u00e9t\u00e9 par actions simplifi\u00e9e \u00e0 capital variable",
+               "count":2427,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 d'exercice lib\u00e9ral \u00e0 responsabilit\u00e9 limit\u00e9e",
+               "path":"Soci\u00e9t\u00e9 d'exercice lib\u00e9ral \u00e0 responsabilit\u00e9 limit\u00e9e",
+               "count":2260,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 anonyme \u00e0 directoire et conseil de surveillance",
+               "path":"Soci\u00e9t\u00e9 anonyme \u00e0 directoire et conseil de surveillance",
+               "count":2103,
+               "state":"displayed"
+            },
+            {
+               "name":"Autre forme juridique",
+               "path":"Autre forme juridique",
+               "count":1861,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 en nom collectif",
+               "path":"Soci\u00e9t\u00e9 en nom collectif",
+               "count":1716,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 de droit \u00e9tranger",
+               "path":"Soci\u00e9t\u00e9 de droit \u00e9tranger",
+               "count":1592,
+               "state":"displayed"
+            },
+            {
+               "name":"Exploitation agricole \u00e0 responsabilit\u00e9 limit\u00e9e",
+               "path":"Exploitation agricole \u00e0 responsabilit\u00e9 limit\u00e9e",
+               "count":1289,
+               "state":"displayed"
+            },
+            {
+               "name":"Groupement agricole d'exploitation en commun",
+               "path":"Groupement agricole d'exploitation en commun",
+               "count":1159,
+               "state":"displayed"
+            },
+            {
+               "name":"Association",
+               "path":"Association",
+               "count":1068,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 \u00e0 responsabilit\u00e9 limit\u00e9e d'un Etat membre de la CE ou partie \u00e0 l'accord sur l'Espace \u00e9conomique europ\u00e9en",
+               "path":"Soci\u00e9t\u00e9 \u00e0 responsabilit\u00e9 limit\u00e9e d'un Etat membre de la CE ou partie \u00e0 l'accord sur l'Espace \u00e9conomique europ\u00e9en",
+               "count":447,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile professionnelle",
+               "path":"Soci\u00e9t\u00e9 civile professionnelle",
+               "count":431,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 d'exercice lib\u00e9ral par actions simplifi\u00e9e",
+               "path":"Soci\u00e9t\u00e9 d'exercice lib\u00e9ral par actions simplifi\u00e9e",
+               "count":426,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile d'exploitation agricole",
+               "path":"Soci\u00e9t\u00e9 civile d'exploitation agricole",
+               "count":413,
+               "state":"displayed"
+            },
+            {
+               "name":"Collectivit\u00e9 territoriale de la R\u00e9publique",
+               "path":"Collectivit\u00e9 territoriale de la R\u00e9publique",
+               "count":255,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative agricole",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative agricole",
+               "count":239,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 d'exercice lib\u00e9ral \u00e0 responsabilit\u00e9 limit\u00e9e \u00e0 associ\u00e9 unique",
+               "path":"Soci\u00e9t\u00e9 d'exercice lib\u00e9ral \u00e0 responsabilit\u00e9 limit\u00e9e \u00e0 associ\u00e9 unique",
+               "count":231,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 \u00e0 responsabilit\u00e9 limit\u00e9e \u00e0 capital variable",
+               "path":"Soci\u00e9t\u00e9 \u00e0 responsabilit\u00e9 limit\u00e9e \u00e0 capital variable",
+               "count":231,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 anonyme d'un Etat membre de la CE ou partie \u00e0 l'accord sur l'Espace \u00e9conomique europ\u00e9en",
+               "path":"Soci\u00e9t\u00e9 anonyme d'un Etat membre de la CE ou partie \u00e0 l'accord sur l'Espace \u00e9conomique europ\u00e9en",
+               "count":219,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 en commandite par actions",
+               "path":"Soci\u00e9t\u00e9 en commandite par actions",
+               "count":203,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative \u00e0 forme anonyme \u00e0 capital variable",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative \u00e0 forme anonyme \u00e0 capital variable",
+               "count":168,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 d'assurances mutuelles",
+               "path":"Soci\u00e9t\u00e9 d'assurances mutuelles",
+               "count":156,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile \u00e0 capital variable",
+               "path":"Soci\u00e9t\u00e9 civile \u00e0 capital variable",
+               "count":145,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 en commandite simple",
+               "path":"Soci\u00e9t\u00e9 en commandite simple",
+               "count":139,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 anonyme d'\u00e9conomie mixte",
+               "path":"Soci\u00e9t\u00e9 anonyme d'\u00e9conomie mixte",
+               "count":131,
+               "state":"displayed"
+            },
+            {
+               "name":"Etablissement public \u00e0 caract\u00e8re industriel et commercial",
+               "path":"Etablissement public \u00e0 caract\u00e8re industriel et commercial",
+               "count":123,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative \u00e0 forme anonyme",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative \u00e0 forme anonyme",
+               "count":106,
+               "state":"displayed"
+            },
+            {
+               "name":"Mutuelle",
+               "path":"Mutuelle",
+               "count":103,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 de placement \u00e0 pr\u00e9pond\u00e9rance immobili\u00e8re \u00e0 capital variable",
+               "path":"Soci\u00e9t\u00e9 de placement \u00e0 pr\u00e9pond\u00e9rance immobili\u00e8re \u00e0 capital variable",
+               "count":103,
+               "state":"displayed"
+            },
+            {
+               "name":"Syndicat",
+               "path":"Syndicat",
+               "count":95,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile de moyens",
+               "path":"Soci\u00e9t\u00e9 civile de moyens",
+               "count":90,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative agricole \u00e0 capital variable",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative agricole \u00e0 capital variable",
+               "count":90,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile professionnelle de commissaires aux comptes",
+               "path":"Soci\u00e9t\u00e9 civile professionnelle de commissaires aux comptes",
+               "count":81,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 de participations financi\u00e8res de professions lib\u00e9rales \u00e0 responsabilit\u00e9 limit\u00e9e",
+               "path":"Soci\u00e9t\u00e9 de participations financi\u00e8res de professions lib\u00e9rales \u00e0 responsabilit\u00e9 limit\u00e9e",
+               "count":78,
+               "state":"displayed"
+            },
+            {
+               "name":"Groupement d'int\u00e9r\u00eat \u00e9conomique",
+               "path":"Groupement d'int\u00e9r\u00eat \u00e9conomique",
+               "count":77,
+               "state":"displayed"
+            },
+            {
+               "name":"Collectivit\u00e9 territoriale ou \u00e9tablissement public local",
+               "path":"Collectivit\u00e9 territoriale ou \u00e9tablissement public local",
+               "count":75,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile de placement immobilier \u00e0 capital variable",
+               "path":"Soci\u00e9t\u00e9 civile de placement immobilier \u00e0 capital variable",
+               "count":65,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile de portefeuille",
+               "path":"Soci\u00e9t\u00e9 civile de portefeuille",
+               "count":64,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 anonyme d'HLM",
+               "path":"Soci\u00e9t\u00e9 anonyme d'HLM",
+               "count":63,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile de placement immobilier",
+               "path":"Soci\u00e9t\u00e9 civile de placement immobilier",
+               "count":59,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 publique locale",
+               "path":"Soci\u00e9t\u00e9 publique locale",
+               "count":56,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile immobili\u00e8re \u00e0 capital variable",
+               "path":"Soci\u00e9t\u00e9 civile immobili\u00e8re \u00e0 capital variable",
+               "count":49,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 europ\u00e9enne",
+               "path":"Soci\u00e9t\u00e9 europ\u00e9enne",
+               "count":45,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile coop\u00e9rative",
+               "path":"Soci\u00e9t\u00e9 civile coop\u00e9rative",
+               "count":44,
+               "state":"displayed"
+            },
+            {
+               "name":"Etablissement public national",
+               "path":"Etablissement public national",
+               "count":42,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 de participation financi\u00e8re de profession lib\u00e9rale d'avocats par actions simplifi\u00e9e",
+               "path":"Soci\u00e9t\u00e9 de participation financi\u00e8re de profession lib\u00e9rale d'avocats par actions simplifi\u00e9e",
+               "count":42,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile professionnelle d'huissiers de justice",
+               "path":"Soci\u00e9t\u00e9 civile professionnelle d'huissiers de justice",
+               "count":40,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative \u00e0 responsabilit\u00e9 limit\u00e9e",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative \u00e0 responsabilit\u00e9 limit\u00e9e",
+               "count":40,
+               "state":"displayed"
+            },
+            {
+               "name":"Etablissement public administratif",
+               "path":"Etablissement public administratif",
+               "count":39,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile de participation",
+               "path":"Soci\u00e9t\u00e9 civile de participation",
+               "count":39,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative de production d'HLM \u00e0 forme anonyme",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative de production d'HLM \u00e0 forme anonyme",
+               "count":39,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative \u00e0 responsabilit\u00e9 limit\u00e9e \u00e0 capital variable",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative \u00e0 responsabilit\u00e9 limit\u00e9e \u00e0 capital variable",
+               "count":39,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 par actions simplifi\u00e9e  \u00e0 associ\u00e9 unique et capital variable",
+               "path":"Soci\u00e9t\u00e9 par actions simplifi\u00e9e  \u00e0 associ\u00e9 unique et capital variable",
+               "count":38,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 anonyme de presse",
+               "path":"Soci\u00e9t\u00e9 anonyme de presse",
+               "count":37,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 d'exercice lib\u00e9ral \u00e0 forme anonyme",
+               "path":"Soci\u00e9t\u00e9 d'exercice lib\u00e9ral \u00e0 forme anonyme",
+               "count":37,
+               "state":"displayed"
+            },
+            {
+               "name":"Etablissement public de coop\u00e9ration intercommunale",
+               "path":"Etablissement public de coop\u00e9ration intercommunale",
+               "count":36,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative d'int\u00e9r\u00eat collectif \u00e0 forme anonyme \u00e0 capital variable",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative d'int\u00e9r\u00eat collectif \u00e0 forme anonyme \u00e0 capital variable",
+               "count":28,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative de banque populaire \u00e0 forme anonyme",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative de banque populaire \u00e0 forme anonyme",
+               "count":28,
+               "state":"displayed"
+            },
+            {
+               "name":"Groupement foncier agricole",
+               "path":"Groupement foncier agricole",
+               "count":27,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 anonyme coop\u00e9rative d'int\u00e9r\u00eat collectif pour l'accession \u00e0 la propri\u00e9t\u00e9",
+               "path":"Soci\u00e9t\u00e9 anonyme coop\u00e9rative d'int\u00e9r\u00eat collectif pour l'accession \u00e0 la propri\u00e9t\u00e9",
+               "count":26,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative ouvri\u00e8re de production \u00e0 responsabilit\u00e9 limit\u00e9e \u00e0 capital variable",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative ouvri\u00e8re de production \u00e0 responsabilit\u00e9 limit\u00e9e \u00e0 capital variable",
+               "count":26,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 de participations financi\u00e8res de professions lib\u00e9rales \u00e0 forme de S.A.S.",
+               "path":"Soci\u00e9t\u00e9 de participations financi\u00e8res de professions lib\u00e9rales \u00e0 forme de S.A.S.",
+               "count":26,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile d'exploitation viticole",
+               "path":"Soci\u00e9t\u00e9 civile d'exploitation viticole",
+               "count":25,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative de banque \u00e0 forme anonyme \u00e0 capital fixe",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative de banque \u00e0 forme anonyme \u00e0 capital fixe",
+               "count":25,
+               "state":"displayed"
+            },
+            {
+               "name":"Exploitation agricole \u00e0 responsabilit\u00e9 limit\u00e9e \u00e0 associ\u00e9 unique",
+               "path":"Exploitation agricole \u00e0 responsabilit\u00e9 limit\u00e9e \u00e0 associ\u00e9 unique",
+               "count":24,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 de participations financi\u00e8res de professions lib\u00e9rales",
+               "path":"Soci\u00e9t\u00e9 de participations financi\u00e8res de professions lib\u00e9rales",
+               "count":24,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative d'int\u00e9r\u00eat collectif d'HLM \u00e0 forme anonyme et capital variable",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative d'int\u00e9r\u00eat collectif d'HLM \u00e0 forme anonyme et capital variable",
+               "count":23,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative de cr\u00e9dit",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative de cr\u00e9dit",
+               "count":23,
+               "state":"displayed"
+            },
+            {
+               "name":"Coop\u00e9rative d'utilisation de mat\u00e9riel agricole",
+               "path":"Coop\u00e9rative d'utilisation de mat\u00e9riel agricole",
+               "count":22,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile coop\u00e9rative \u00e0 capital variable",
+               "path":"Soci\u00e9t\u00e9 civile coop\u00e9rative \u00e0 capital variable",
+               "count":22,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative \u00e0 forme anonyme, directoire et conseil de surveillance",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative \u00e0 forme anonyme, directoire et conseil de surveillance",
+               "count":22,
+               "state":"displayed"
+            },
+            {
+               "name":"Sans correspondance",
+               "path":"Sans correspondance",
+               "count":21,
+               "state":"displayed"
+            },
+            {
+               "name":"Caisse de r\u00e9assurances mutuelles agricoles",
+               "path":"Caisse de r\u00e9assurances mutuelles agricoles",
+               "count":20,
+               "state":"displayed"
+            },
+            {
+               "name":"Forme juridique ind\u00e9termin\u00e9e",
+               "path":"Forme juridique ind\u00e9termin\u00e9e",
+               "count":19,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 \u00e0 responsabilit\u00e9 limit\u00e9e  \u00e0 associ\u00e9 unique et capital variable",
+               "path":"Soci\u00e9t\u00e9 \u00e0 responsabilit\u00e9 limit\u00e9e  \u00e0 associ\u00e9 unique et capital variable",
+               "count":19,
+               "state":"displayed"
+            },
+            {
+               "name":"Etablissement public local",
+               "path":"Etablissement public local",
+               "count":18,
+               "state":"displayed"
+            },
+            {
+               "name":"Union de coop\u00e9ratives agricoles",
+               "path":"Union de coop\u00e9ratives agricoles",
+               "count":18,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 anonyme d'HLM \u00e0 conseil d'administration",
+               "path":"Soci\u00e9t\u00e9 anonyme d'HLM \u00e0 conseil d'administration",
+               "count":17,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative de banque populaire",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative de banque populaire",
+               "count":17,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 d'exercice lib\u00e9ral par actions simplifi\u00e9e \u00e0 associ\u00e9 unique",
+               "path":"Soci\u00e9t\u00e9 d'exercice lib\u00e9ral par actions simplifi\u00e9e \u00e0 associ\u00e9 unique",
+               "count":17,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative de banque \u00e0 forme anonyme et capital variable",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative de banque \u00e0 forme anonyme et capital variable",
+               "count":16,
+               "state":"displayed"
+            },
+            {
+               "name":"Groupement forestier",
+               "path":"Groupement forestier",
+               "count":15,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile professionnelle d'avocats",
+               "path":"Soci\u00e9t\u00e9 civile professionnelle d'avocats",
+               "count":15,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 anonyme d'\u00e9conomie mixte locale",
+               "path":"Soci\u00e9t\u00e9 anonyme d'\u00e9conomie mixte locale",
+               "count":14,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 civile agricole",
+               "path":"Soci\u00e9t\u00e9 civile agricole",
+               "count":14,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative d'int\u00e9r\u00eat collectif \u00e0 forme anonyme",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative d'int\u00e9r\u00eat collectif \u00e0 forme anonyme",
+               "count":14,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative de consommation \u00e0 responsabilit\u00e9 limit\u00e9e",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative de consommation \u00e0 responsabilit\u00e9 limit\u00e9e",
+               "count":14,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative \u00e0 capital et personnel variables",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative \u00e0 capital et personnel variables",
+               "count":14,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 de placement \u00e0 pr\u00e9pond\u00e9rance immobili\u00e8re \u00e0 capital variable sous la forme SAS",
+               "path":"Soci\u00e9t\u00e9 de placement \u00e0 pr\u00e9pond\u00e9rance immobili\u00e8re \u00e0 capital variable sous la forme SAS",
+               "count":14,
+               "state":"displayed"
+            },
+            {
+               "name":"Banque coop\u00e9rative r\u00e9gie par les articles L. 512-85 et suivants du Code Mon\u00e9taire et Financier",
+               "path":"Banque coop\u00e9rative r\u00e9gie par les articles L. 512-85 et suivants du Code Mon\u00e9taire et Financier",
+               "count":12,
+               "state":"displayed"
+            },
+            {
+               "name":"Caisse de Cr\u00e9dit Agricole Mutuel",
+               "path":"Caisse de Cr\u00e9dit Agricole Mutuel",
+               "count":12,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 anonyme d'HLM \u00e0 directoire et conseil de surveillance",
+               "path":"Soci\u00e9t\u00e9 anonyme d'HLM \u00e0 directoire et conseil de surveillance",
+               "count":12,
+               "state":"displayed"
+            },
+            {
+               "name":"Soci\u00e9t\u00e9 coop\u00e9rative ouvri\u00e8re de production \u00e0 responsabilit\u00e9 limit\u00e9e",
+               "path":"Soci\u00e9t\u00e9 coop\u00e9rative ouvri\u00e8re de production \u00e0 responsabilit\u00e9 limit\u00e9e",
+               "count":12,
+               "state":"displayed"
+            }
+         ]
+      }
+   ]
